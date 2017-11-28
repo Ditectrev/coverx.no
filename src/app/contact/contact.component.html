@@ -1,3 +1,56 @@
-<p>
-  contact works!
-</p>
+<div class="container wow fadeInUp">
+  <div class="section-header">
+    <h3 class="section-title">Contact</h3>
+    <p class="section-description">Non vos have ullus questions? Ne liberum contactus nos!</p>
+  </div>
+</div>
+<div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+<div class="container wow fadeInUp">
+  <div class="row justify-content-center">
+    <div class="col-lg-3 col-md-4">
+      <div class="info">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Lunnamyri 49-53,<br>6856 Sogndal</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>kontakt@coverx.no</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+47 22 31 00 00</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-8">
+      <div class="form">
+        <div id="sendmessage">Din melding har blitt sendt. Takk skal du ha!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" class="form-class" id="name" placeholder="Navnet ditt" data-rule="minlen:4" data-msg="Vennligst skriv inn minst 4 tegn">
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" class-form="form-control" name="email" id="email" placeholder="Din epost" data-rule="email" data-msg="Vennligst skriv inn en gyldig e-postadresse">
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Utsette" data-rule="minlen:4" data-msg="Vennligst skriv inn minst 8 tegn på emnet">
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Vennligst skriv noe for oss"></textarea>
+            <div class="validation"></div>
+          </div>
+          <div class="text-center"><button type="submit">Sende melding</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
