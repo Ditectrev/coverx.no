@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/npm-font-open-sans/open-sans.css";
+@import "../node_modules/typeface-poppins/index.css";
+
+body {
+  background: #ffffff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #2dc997;
+}
+
+a:hover, a:active, a:focus {
+  color: #2dca98;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #ffffff;
+}
+
+.section-header .section-title {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-header .section-description {
+  color: #999999;
+  text-align: center;
+  padding-bottom: 40px;
+}

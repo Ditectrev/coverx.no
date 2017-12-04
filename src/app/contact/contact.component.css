@@ -1,0 +1,103 @@
+section {
+  background: #f7f7f7;
+  padding: 80px 0 40px 0;
+}
+
+section #google-map {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+section .info {
+  color: #333333;
+}
+
+section .info i {
+  color: #2dc997;
+  float: left;
+  font-size: 32px;
+}
+
+section .info p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  padding: 0 0 10px 50px;
+}
+
+section .info .email p {
+  padding-top: 5px;
+}
+
+section .social-links {
+  padding-bottom: 20px;
+}
+
+section .social-links a {
+  background: #333333;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 18px;
+  height: 36px;
+  line-height: 1;
+  padding: 8px 0;
+  text-align: center;
+  transition: .3s;
+  width: 36px;
+}
+
+section .social-links a:hover {
+  background: #2dc997;
+  color: #ffffff;
+}
+
+section .form #sendmessage {
+  border: 1px solid #2dc997;
+  color: #2dc997;
+  display: none;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+section .form #errormessage {
+  border: 1px solid red;
+  color: red;
+  display: none;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+section .form #sendmessage.show, section .form #errormessage.show, section .form .show {
+  display: block;
+}
+
+section .form .validation {
+  color: red;
+  display: none;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+section .form input, section .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+section .form button[type="submit"] {
+  background: #2dc997;
+  border: 0;
+  color: #ffffff;
+  padding: 10px 24px;
+  transition: .4s;
+}
+
+section .form button[type="submit"]:hover {
+  background: #51d8ad;
+}
