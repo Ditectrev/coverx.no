@@ -4,7 +4,7 @@ section {
 }
 
 section .about-container .background {
-  background: url("../../assets/images/about-img.jpg") center top no-repeat;
+  background: url("../../assets/images/team-1.png") center top no-repeat;
   height: 600px;
   margin-bottom: 10px;
 }

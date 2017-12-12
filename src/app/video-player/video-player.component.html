@@ -1,7 +1,13 @@
 <section>
   <div class="video-container">
+    <video loop muted autoplay poster="../../assets/images/home-bg.jpg" class="bg-video">
+      <source src="../../assets/video/background.mp4" type="video/mp4">
+      <source src="../../assets/video/background.ogv" type="video/ogg">
+    </video>
+  </div>
+  <div class="content">
     <h1>Velkommen til CoverX</h1>
     <h2>Vi skaper skjønnhet</h2>
-    <a href="" class="btn-get-started">Kom i gang</a>
+    <a href="#" class="btn-get-started" [scrollTo]="'about'" [duration]="1800">Kom i gang</a>
   </div>
 </section>

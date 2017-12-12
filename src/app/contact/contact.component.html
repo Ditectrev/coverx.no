@@ -1,18 +1,20 @@
-<section>
+<section id="contact">
   <div class="container wow fadeInUp">
     <div class="section-header">
       <h3 class="section-title">Contact</h3>
       <p class="section-description">Non vos have ullus questions? Ne liberum contactus nos!</p>
     </div>
   </div>
-  <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
   <div class="container wow fadeInUp">
     <div class="row">
       <div class="col-lg-3 col-md-4 col-md-offset-2">
         <div class="info">
           <div>
             <i class="fa fa-map-marker"></i>
-            <p>Lunnamyri 49-53,<br>6856 Sogndal</p>
+            <p>Høgisvegen 44,<br>6873 Marifjøra</p>
           </div>
           <div>
             <i class="fa fa-envelope"></i>
