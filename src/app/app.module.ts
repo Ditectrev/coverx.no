@@ -10,7 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { AboutComponent } from './about/about.component';
 import { CounterComponent } from './counter/counter.component';
-import { ServicesComponent } from './services/services.component';
 import { CallToActionComponent } from './call-to-action/call-to-action.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
@@ -29,7 +28,7 @@ import { ImageFilterPipe } from './shared/filter.pipe';
 
 import { SmoothScrollToDirective, SmoothScrollDirective } from "../../node_modules/ng2-smooth-scroll";
 import { AgmCoreModule } from '@agm/core';
-// import { CountoModule } from 'angular2-counto';
+// import { CountoModule }  from 'angular2-counto';
 
 import { appRoutes } from "../routes";
 
@@ -41,7 +40,6 @@ import { appRoutes } from "../routes";
     VideoPlayerComponent,
     AboutComponent,
     CounterComponent,
-    ServicesComponent,
     CallToActionComponent,
     GalleryComponent,
     TeamComponent,
