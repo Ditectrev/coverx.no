@@ -30,6 +30,11 @@ import { AgmCoreModule } from '@agm/core';
 // import { CountoModule }  from 'angular2-counto';
 
 import { appRoutes } from "../routes";
+import { BagsComponent } from './bags/bags.component';
+import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
+import { BreakfastBagsComponent } from './breakfast-bags/breakfast-bags.component';
+import { SpecialistBagsComponent } from './specialist-bags/specialist-bags.component';
+import { BoatsComponent } from './boats/boats.component';
 
 
 @NgModule({
@@ -49,7 +54,12 @@ import { appRoutes } from "../routes";
     SmoothScrollDirective,
     CleaningBagsComponent,
     ImageDetailComponent,
-    ImageFilterPipe
+    ImageFilterPipe,
+    BagsComponent,
+    MopperBagsComponent,
+    BreakfastBagsComponent,
+    SpecialistBagsComponent,
+    BoatsComponent
   ],
   imports: [
     BrowserModule,
