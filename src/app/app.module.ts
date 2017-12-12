@@ -12,7 +12,6 @@ import { AboutComponent } from './about/about.component';
 import { CounterComponent } from './counter/counter.component';
 import { CallToActionComponent } from './call-to-action/call-to-action.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { BoatCoversComponent } from './boat-covers/boat-covers.component';
 import { BoatChairsComponent } from './boat-chairs/boat-chairs.component';
@@ -42,7 +41,6 @@ import { appRoutes } from "../routes";
     CounterComponent,
     CallToActionComponent,
     GalleryComponent,
-    TeamComponent,
     ContactComponent,
     BoatCoversComponent,
     BoatChairsComponent,
