@@ -6,7 +6,6 @@ section {
 ul {
   margin: 20px auto;
   padding: 0;
-  width: 1200px;
 }
 
 li {
@@ -18,10 +17,6 @@ li {
   box-shadow: #555555 1px 1px 8px 1px;
   margin: 6px;
 }
-
-/*section #gallery-wrapper {*/
-  /*padding-right: 15px;*/
-/*}*/
 
 section #gallery-filters {
   list-style: none;
