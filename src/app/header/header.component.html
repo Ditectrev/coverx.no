@@ -5,26 +5,53 @@
     </div>
     <nav role="navigation" id="nav-menu-container">
       <ul class="nav-menu">
-        <li class="menu-active"><a href="#">Hovedside</a></li>
-        <li><a href="#">Om meg</a></li>
-        <li><a href="#">Overtrekker</a></li>
-        <li><a href="#">Battilbehor</a>
+        <li class="menu-active"
+            role="presentation"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Hovedside</a></li>
+        <li
+          role="presentation"
+          routerLinkActive="active"><a routerLink="/om-meg">Om meg</a></li>
+        <li
+          role="presentation"
+            routerLinkActive="active"><a routerLink="/overtrekker">Overtrekker</a></li>
+        <li
+          role="presentation"
+          routerLinkActive="active"><a routerLink="/battilbehor">Battilbehor</a>
           <ul>
-            <li><a href="#">Båtkalesjer</a></li>
-            <li><a href="#">Båtputer</a></li>
+            <li
+              role="presentation"
+              routerLinkActive="active"><a routerLink="/batkalesjer">Båtkalesjer</a></li>
+            <li role="presentation"
+                routerLinkActive="active"><a routerLink="/batputer">Båtputer</a></li>
           </ul>
         </li>
-        <li><a href="#">Vesker</a>
+        <li><a routerLink="/vesker">Vesker</a>
           <ul>
-            <li><a href="#">Rengjøringvesker</a></li>
-            <li><a href="#">Mopperveske</a></li>
-            <li><a href="#">Frokostveske</a></li>
-            <li><a href="#">Verktoyveske</a></li>
+            <li
+              role="presentation"
+              routerLinkActive="active">
+              <a routerLink="/rengjoringvesker">Rengjøringvesker</a></li>
+            <li
+              role="presentation"
+              routerLinkActive="active"><a routerLink="/mopperveske">Mopperveske</a></li>
+            <li
+              role="presentation"
+              routerLinkActive="active"><a routerLink="/frokostveske">Frokostveske</a></li>
+            <li
+              role="presentation"
+              routerLinkActive="active"><a routerLink="/verktoyveske">Verktoyveske</a></li>
           </ul>
         </li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li
+          role="presentation"
+          routerLinkActive="active"><a routerLink="/galeria">Galeria</a></li>
+        <li
+          role="presentation"
+          routerLinkActive="active"><a routerLink="/kontakt">Kontakt</a></li>
       </ul>
     </nav>
   </div>
 </header>
+<!-- Here display routes content. -->
+<router-outlet></router-outlet>
