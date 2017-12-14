@@ -5,50 +5,69 @@
     </div>
     <nav role="navigation" id="nav-menu-container">
       <ul class="nav-menu">
-        <li class="menu-active"
-            role="presentation"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Hovedside</a></li>
-        <li
-          role="presentation"
-          routerLinkActive="active"><a routerLink="/om-meg">Om meg</a></li>
-        <li
-          role="presentation"
-            routerLinkActive="active"><a routerLink="/overtrekker">Overtrekker</a></li>
-        <li
-          role="presentation"
-          routerLinkActive="active"><a routerLink="/battilbehor">Battilbehor</a>
-          <ul>
-            <li
-              role="presentation"
-              routerLinkActive="active"><a routerLink="/batkalesjer">Båtkalesjer</a></li>
-            <li role="presentation"
-                routerLinkActive="active"><a routerLink="/batputer">Båtputer</a></li>
-          </ul>
-        </li>
-        <li><a routerLink="/vesker">Vesker</a>
-          <ul>
-            <li
-              role="presentation"
-              routerLinkActive="active">
-              <a routerLink="/rengjoringvesker">Rengjøringvesker</a></li>
-            <li
-              role="presentation"
-              routerLinkActive="active"><a routerLink="/mopperveske">Mopperveske</a></li>
-            <li
-              role="presentation"
-              routerLinkActive="active"><a routerLink="/frokostveske">Frokostveske</a></li>
-            <li
-              role="presentation"
-              routerLinkActive="active"><a routerLink="/verktoyveske">Verktoyveske</a></li>
-          </ul>
+        <!-- TODO: Check routerLinkActiveOptions -->
+        <li role="presentation"
+            routerLinkActive="menu-active"
+            [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/">Hovedside</a>
         </li>
         <li
           role="presentation"
-          routerLinkActive="active"><a routerLink="/galeria">Galeria</a></li>
+          routerLinkActive="menu-active">
+          <a routerLink="/om-meg">Om meg</a>
+        </li>
         <li
           role="presentation"
-          routerLinkActive="active"><a routerLink="/kontakt">Kontakt</a></li>
+            routerLinkActive="menu-active">
+          <a routerLink="/overtrekker">Overtrekker</a>
+        </li>
+        <li
+          role="presentation"
+          routerLinkActive="menu-active">
+          <a routerLink="/battilbehor">Battilbehor</a>
+          <ul>
+            <li
+              role="presentation">
+              <a routerLink="/batkalesjer">Båtkalesjer</a>
+            </li>
+            <li
+              role="presentation">
+              <a routerLink="/batputer">Båtputer</a>
+            </li>
+          </ul>
+        </li>
+        <li role="presentation"
+            routerLinkActive="menu-active">
+          <a routerLink="/vesker">Vesker</a>
+          <ul>
+            <li
+              role="presentation">
+              <a routerLink="/rengjoringvesker">Rengjøringvesker</a>
+            </li>
+            <li
+              role="presentation">
+              <a routerLink="/mopperveske">Mopperveske</a>
+            </li>
+            <li
+              role="presentation">
+              <a routerLink="/frokostveske">Frokostveske</a>
+            </li>
+            <li
+              role="presentation">
+              <a routerLink="/verktoyveske">Verktoyveske</a>
+            </li>
+          </ul>
+        </li>
+        <li
+          role="presentation"
+          routerLinkActive="menu-active">
+          <a routerLink="/galeria">Galeria</a>
+        </li>
+        <li
+          role="presentation"
+          routerLinkActive="menu-active">
+          <a routerLink="/kontakt">Kontakt</a>
+        </li>
       </ul>
     </nav>
   </div>
