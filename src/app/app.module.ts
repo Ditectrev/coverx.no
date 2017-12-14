@@ -24,7 +24,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { WINDOW_PROVIDERS } from './shared/window.service';
 import { ImageService } from './shared/image.service';
 import { ImageFilterPipe } from './shared/filter.pipe';
-import { fadeAnimation } from './shared/fade.animation';
 
 import { SmoothScrollToDirective, SmoothScrollDirective } from "../../node_modules/ng2-smooth-scroll";
 import { AgmCoreModule } from '@agm/core';

@@ -1,24 +1,14 @@
-import { trigger, animate, transition, style, query } from "@angular/animations";
+import { trigger, animate, transition, style } from '@angular/animations';
 
 export const fadeAnimation =
-  trigger('fadeAnimation', [
-    transition('* => *', [
-      query(':enter', [
-        style({ opacity: 0 })
-      ],
-        { optional: true}
-        ),
-      query(':leave', [
-        style({ opacity: 1 }),
-        animate('0.2s', style({ opacity: 0 }))
-      ],
-        { optional: true }
-        ),
-      query(':enter', [
-        style({ opacity: 0 }),
-        animate('0.2s', style({ opacity: 1 }))
-      ],
-        { optional: true }
-        )
-    ])
+
+  // Trigger name, needed to attach in HTML.
+  trigger('routeState', [
+
+    // Route for 'enter' transition.
+    transition('*<=>*', [
+      style({ opacity: 0 }), // CSS styles at start of transition.
+      animate('.6s', style({ opacity: 1 }))  // Animation and styles at end of transition.
+    ]),
+
   ]);

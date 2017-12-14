@@ -1,19 +1,14 @@
-import {Component, Input, OnChanges} from '@angular/core';
+import {Component, HostBinding, ViewChild, OnChanges} from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min.js'
 import { AfterViewInit } from "@angular/core";
-import {animate, state, style, transition, trigger} from "@angular/animations";
+import { fadeAnimation } from "./shared/fade.animation";
+import {RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [
-    trigger('visibilityChanged', [
-      state('shown', style({ opacity: 1 })),
-      state('hidden', style({ opacity: 0 })),
-      transition('* => *', animate('.5s'))
-    ])
-  ]
+  animations: [fadeAnimation]
 })
 export class AppComponent implements AfterViewInit, OnChanges {
   title = 'CoverX';
@@ -22,6 +17,7 @@ export class AppComponent implements AfterViewInit, OnChanges {
   // elem = document.getElementsByClassName('back-to-top');
 
   // @Input() isVisible: boolean = true;
+  constructor() { }
 
   ngOnChanges() {
     this.visibility = this.isVisible ? 'shown' : 'hidden';
@@ -35,5 +31,10 @@ export class AppComponent implements AfterViewInit, OnChanges {
     document.body.scrollTop = document.documentElement.scrollTop = 0; // Scroll to top.
     this.isVisible = !this.isVisible;
     // this.elem.setAttribute("style", "display: none");
+  }
+
+  getRouterOutletState(routerOutlet: RouterOutlet) {
+    const routeData = routerOutlet.activatedRouteData['animation'];
+    return routeData ? routeData : 'rootPage';
   }
 }

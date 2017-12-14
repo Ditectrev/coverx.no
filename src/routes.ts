@@ -15,19 +15,19 @@ import {DraftsComponent} from "./app/drafts/drafts.component";
 import {HomeComponent} from "./app/home/home.component";
 
 export const appRoutes:Routes = [
-  { path: 'om-meg', component: AboutComponent },
-  { path: 'vesker', component: BagsComponent },
-  { path: 'batputer', component: BoatChairsComponent },
-  { path: 'batkalesjer', component: BoatCoversComponent },
-  { path: 'battilbehor', component: BoatsComponent },
-  { path: 'frokostveske', component: BreakfastBagsComponent },
-  { path: 'rengjoringvesker', component: CleaningBagsComponent },
-  { path: 'kontakt', component: ContactComponent },
-  { path: 'overtrekker', component: DraftsComponent },
-  { path: 'galeria', component: GalleryComponent },
-  { path: '', component: HomeComponent },
-  { path: 'mopperveske', component: MopperBagsComponent },
-  { path: 'verktoyveske', component: SpecialistBagsComponent },
-  { path: 'image/:id', component: ImageDetailComponent },
+  { path: 'om-meg', component: AboutComponent, data: { animation: 'page1' } },
+  { path: 'vesker', component: BagsComponent, data: { animation: 'page2' } },
+  { path: 'batputer', component: BoatChairsComponent, data: { animation: 'page3' } },
+  { path: 'batkalesjer', component: BoatCoversComponent, data: { animation: 'page4' } },
+  { path: 'battilbehor', component: BoatsComponent, data: { animation: 'page5' } },
+  { path: 'frokostveske', component: BreakfastBagsComponent, data: { animation: 'page6' } },
+  { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page7' } },
+  { path: 'kontakt', component: ContactComponent, data: { animation: 'page8' } },
+  { path: 'overtrekker', component: DraftsComponent, data: { animation: 'page9' } },
+  { path: 'galeria', component: GalleryComponent, data: { animation: 'page10' } },
+  { path: '', component: HomeComponent, data: { animation: 'page11' } },
+  { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page12' } },
+  { path: 'verktoyveske', component: SpecialistBagsComponent, data: { animation: 'page13' } },
+  { path: 'image/:id', component: ImageDetailComponent, data: { animation: 'page14' } },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
