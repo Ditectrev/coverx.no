@@ -1,8 +1,9 @@
-import {Component, HostBinding, ViewChild, OnChanges} from '@angular/core';
+import {Component, ViewChild, OnChanges} from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min.js'
 import { AfterViewInit } from "@angular/core";
 import { fadeAnimation } from "./shared/fade.animation";
 import {RouterOutlet} from "@angular/router";
+import {NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF} from "ngx-image-gallery";
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,9 @@ export class AppComponent implements AfterViewInit, OnChanges {
 
   // @Input() isVisible: boolean = true;
   constructor() { }
+
+  // get reference to gallery component
+  @ViewChild(NgxImageGalleryComponent) ngxImageGallery: NgxImageGalleryComponent;
 
   ngOnChanges() {
     this.visibility = this.isVisible ? 'shown' : 'hidden';
@@ -37,4 +41,6 @@ export class AppComponent implements AfterViewInit, OnChanges {
     const routeData = routerOutlet.activatedRouteData['animation'];
     return routeData ? routeData : 'rootPage';
   }
+
+  ngOnInit() {}
 }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { RouterModule } from "@angular/router";
-
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from "@angular/platform-browser";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -18,6 +18,13 @@ import { BoatChairsComponent } from './boat-chairs/boat-chairs.component';
 import { FooterComponent } from './footer/footer.component';
 import { CleaningBagsComponent } from './cleaning-bags/cleaning-bags.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { BagsComponent } from './bags/bags.component';
+import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
+import { BreakfastBagsComponent } from './breakfast-bags/breakfast-bags.component';
+import { SpecialistBagsComponent } from './specialist-bags/specialist-bags.component';
+import { BoatsComponent } from './boats/boats.component';
+import { DraftsComponent } from './drafts/drafts.component';
+import { HomeComponent } from './home/home.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
@@ -28,17 +35,15 @@ import { ImageFilterPipe } from './shared/filter.pipe';
 import { SmoothScrollToDirective, SmoothScrollDirective } from "../../node_modules/ng2-smooth-scroll";
 import { AgmCoreModule } from '@agm/core';
 // import { CountoModule }  from 'angular2-counto';
+import { NgxImageGalleryModule } from "ngx-image-gallery";
 
 import { appRoutes } from "../routes";
-import { BagsComponent } from './bags/bags.component';
-import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
-import { BreakfastBagsComponent } from './breakfast-bags/breakfast-bags.component';
-import { SpecialistBagsComponent } from './specialist-bags/specialist-bags.component';
-import { BoatsComponent } from './boats/boats.component';
-import { DraftsComponent } from './drafts/drafts.component';
-import { HomeComponent } from './home/home.component';
 
-
+export class MyHammerConfig extends HammerGestureConfig  {
+  overrides = <any>{
+    'swipe': {velocity: 0.4, threshold: 20} // override default settings
+  }
+}
 
 @NgModule({
   declarations: [
@@ -69,13 +74,17 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NgxImageGalleryModule,
     // CountoModule,
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA4C0OuttrXwqjsHNQhIjYvPeQyq7zLvG4'
     })
   ],
-  providers: [WINDOW_PROVIDERS, ImageService],
+  providers: [WINDOW_PROVIDERS, ImageService, {
+    provide: HAMMER_GESTURE_CONFIG,
+    useClass: MyHammerConfig
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
