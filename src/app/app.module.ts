@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
+import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from "@angular/platform-browser";
 
@@ -74,6 +73,7 @@ export class MyHammerConfig extends HammerGestureConfig  {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     NgxImageGalleryModule,
     // CountoModule,
     RouterModule.forRoot(appRoutes),
