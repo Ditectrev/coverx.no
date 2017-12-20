@@ -38,7 +38,7 @@ const IMAGES = [
   {"id": 22, "category": "cleaning-bags", "caption": "sample caption", "url": "assets/images/gallery/cleaning-bags/cleaning-bags-06.jpg"},
   {"id": 23, "category": "cleaning-bags", "caption": "sample caption", "url": "assets/images/gallery/cleaning-bags/cleaning-bags-07.jpg"},
   {"id": 24, "category": "cleaning-bags", "caption": "sample caption", "url": "assets/images/gallery/cleaning-bags/cleaning-bags-08.jpg"},
-  {"id": 25, "category": "others", "caption": "sample caption", "url": "assets/images/gallery/others/others-01.jpg"},
-  {"id": 26, "category": "others", "caption": "sample caption", "url": "assets/images/gallery/others/others-02.jpg"},
+  {"id": 25, "category": "others", "caption": "sample caption", "url": "assets/images/gallery/others/others1.jpg"},
+  {"id": 26, "category": "others", "caption": "sample caption", "url": "assets/images/gallery/others/others2.jpg"},
   {"id": 27, "category": "others", "caption": "sample caption", "url": "assets/images/gallery/others/others-03.jpg"}
 ];

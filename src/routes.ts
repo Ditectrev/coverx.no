@@ -1,6 +1,5 @@
 import { Routes } from "@angular/router";
 import { GalleryComponent } from "./app/gallery/gallery.component";
-import { ImageDetailComponent } from "./app/image-detail/image-detail.component";
 import {AboutComponent} from "./app/about/about.component";
 import {BagsComponent} from "./app/bags/bags.component";
 import {BoatChairsComponent} from "./app/boat-chairs/boat-chairs.component";
@@ -28,6 +27,5 @@ export const appRoutes:Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page11' } },
   { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page12' } },
   { path: 'verktoyveske', component: SpecialistBagsComponent, data: { animation: 'page13' } },
-  { path: 'image/:id', component: ImageDetailComponent, data: { animation: 'page14' } },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];

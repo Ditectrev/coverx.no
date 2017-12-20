@@ -16,7 +16,6 @@ import { BoatCoversComponent } from './boat-covers/boat-covers.component';
 import { BoatChairsComponent } from './boat-chairs/boat-chairs.component';
 import { FooterComponent } from './footer/footer.component';
 import { CleaningBagsComponent } from './cleaning-bags/cleaning-bags.component';
-import { ImageDetailComponent } from './image-detail/image-detail.component';
 import { BagsComponent } from './bags/bags.component';
 import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
 import { BreakfastBagsComponent } from './breakfast-bags/breakfast-bags.component';
@@ -60,7 +59,6 @@ export class MyHammerConfig extends HammerGestureConfig  {
     SmoothScrollToDirective,
     SmoothScrollDirective,
     CleaningBagsComponent,
-    ImageDetailComponent,
     ImageFilterPipe,
     BagsComponent,
     MopperBagsComponent,

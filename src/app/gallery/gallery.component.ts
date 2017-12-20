@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit} from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { ImageService } from "../shared/image.service";
 
 @Component({
@@ -6,7 +6,7 @@ import { ImageService } from "../shared/image.service";
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent implements OnInit, OnChanges {
+export class GalleryComponent implements OnChanges {
   title = 'Galleri';
   description = 'Under finner du kanskje et galleri av vårt arbeid';
   visibleImages: any[] = [];
@@ -14,9 +14,6 @@ export class GalleryComponent implements OnInit, OnChanges {
 
   constructor(private imageService: ImageService) {
     this.visibleImages = this.imageService.getImages();
-  }
-
-  ngOnInit() {
   }
 
   ngOnChanges() {

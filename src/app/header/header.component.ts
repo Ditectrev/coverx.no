@@ -1,4 +1,4 @@
-import {Component, HostListener, Inject, OnInit} from '@angular/core';
+import {Component, HostListener, Inject} from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser'
 import {WINDOW} from '../shared/window.service';
 
@@ -7,17 +7,13 @@ import {WINDOW} from '../shared/window.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   public fixed: boolean = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
     @Inject(WINDOW) private window: Window
   ) { }
-
-  ngOnInit() {
-
-  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

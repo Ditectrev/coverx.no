@@ -41,6 +41,4 @@ export class AppComponent implements AfterViewInit, OnChanges {
     const routeData = routerOutlet.activatedRouteData['animation'];
     return routeData ? routeData : 'rootPage';
   }
-
-  ngOnInit() {}
 }

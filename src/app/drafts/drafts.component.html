@@ -1,12 +1,17 @@
 <section>
   <div class="container wow fadeIn">
     <div class="section-header">
-      <h3 class="section-title">Overtrekker</h3>
-      <p class="section-description">Har du musik utstyr og trenger du overtrekk eller veske på det?<br><strong>Bare ta kantakt med meg.</strong></p>
+      <h3 class="section-title">{{ title }}</h3>
+      <p class="section-description">{{ description1 }}<br><strong>{{ description2 }}</strong></p>
     </div>
     <div class="row wow fadeInUp">
-      <img class="col-lg-6" src="../../assets/images/gallery/others/others-01.jpg" alt="others" width="600" height="300">
-      <img class="col-lg-6" src="../../assets/images/gallery/others/others-02.jpg" alt="others" width="600" height="300">
+      <img
+        class="col-lg-6 col-md-12"
+        *ngFor="let image of images"
+        src="{{ image }}"
+        alt="overtrekker"
+        title="overtrekker"
+      >
     </div>
   </div>
 </section>
