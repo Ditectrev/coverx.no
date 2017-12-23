@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class CleaningBagsComponent {
   title = "Rengjøringvesker";
   images = [
-    "assets/images/renjoringveske1.jpg",
-    "assets/images/renjoringveske2.jpg"
+    "assets/images/rengjoringvesker1.jpg",
+    "assets/images/rengjoringvesker2.jpg"
   ];
   boxes = [
     {"title": "Praktisk", "description": "Veldig praktisk veske til alle renholdere. Av og til glemmer du hansker eller noen annen midle.", "icon": "fa-plug"},

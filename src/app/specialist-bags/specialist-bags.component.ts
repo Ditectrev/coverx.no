@@ -9,7 +9,7 @@ export class SpecialistBagsComponent {
   title = "Verktøyveske";
   description = "Skreddersydd verktøyveske til alle profesjonell arbeidere.";
   images = [
-    "assets/images/renjoringveske1.jpg",
-    "assets/images/renjoringveske2.jpg"
+    "assets/images/rengjoringvesker1.jpg",
+    "assets/images/rengjoringvesker2.jpg"
   ];
 }

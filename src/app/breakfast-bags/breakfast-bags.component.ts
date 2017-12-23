@@ -9,7 +9,7 @@ export class BreakfastBagsComponent {
   title = "Frokostveske";
   description = "Veldig praktisk frokostveske til alle som kjører bil og må spise i blen.";
   images = [
-    "assets/images/renjoringveske1.jpg",
-    "assets/images/renjoringveske2.jpg"
+    "assets/images/rengjoringvesker1.jpg",
+    "assets/images/rengjoringvesker2.jpg"
   ];
 }
