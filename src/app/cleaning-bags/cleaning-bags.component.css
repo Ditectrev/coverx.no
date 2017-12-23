@@ -4,7 +4,16 @@ section {
   padding: 80px 0 60px 0;
 }
 
-section .box {
+img {
+  height: 300px;
+  margin: 35px 0;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.box {
   background: #fafafa;
   border: 1px solid #e6e6e6;
   height: 200px;
@@ -14,7 +23,7 @@ section .box {
   text-align: center;
 }
 
-section .icon {
+.icon {
   border: 6px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -24,7 +33,7 @@ section .icon {
   transition: .2s;
 }
 
-section .icon a {
+.icon a {
   background: #2dc997;
   border: 2px solid #2dc997;
   border-radius: 50%;
@@ -33,32 +42,33 @@ section .icon a {
   transition: .3s;
 }
 
-section .icon i {
+.icon i {
   color: #ffffff;
   font-size: 24px;
 }
 
-section .box:hover .icon i {
+.box:hover .icon i {
   color: #2dc997;
 }
 
-section .box:hover .icon a {
+.box:hover .icon a {
   background: #ffffff;
   color: #2dc997;
 }
 
-section .title {
+.title {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
-section .title a {
+.title a {
   color: #111111;
 }
 
-section .description {
-  font-size: 14px;
-  line-height: 24px;
+@media (max-width: 1080px) {
+  img {
+    width: 100%;
+  }
 }
