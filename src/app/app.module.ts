@@ -21,7 +21,7 @@ import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
 import { BreakfastBagsComponent } from './breakfast-bags/breakfast-bags.component';
 import { SpecialistBagsComponent } from './specialist-bags/specialist-bags.component';
 import { BoatsComponent } from './boats/boats.component';
-import { DraftsComponent } from './drafts/drafts.component';
+import { CoversComponent } from './covers/covers.component';
 import { HomeComponent } from './home/home.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -65,7 +65,7 @@ export class MyHammerConfig extends HammerGestureConfig  {
     BreakfastBagsComponent,
     SpecialistBagsComponent,
     BoatsComponent,
-    DraftsComponent,
+    CoversComponent,
     HomeComponent
   ],
   imports: [

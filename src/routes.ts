@@ -10,7 +10,7 @@ import {CleaningBagsComponent} from "./app/cleaning-bags/cleaning-bags.component
 import {ContactComponent} from "./app/contact/contact.component";
 import {MopperBagsComponent} from "./app/mopper-bags/mopper-bags.component";
 import {SpecialistBagsComponent} from "./app/specialist-bags/specialist-bags.component";
-import {DraftsComponent} from "./app/drafts/drafts.component";
+import {CoversComponent} from "./app/covers/covers.component";
 import {HomeComponent} from "./app/home/home.component";
 
 export const appRoutes:Routes = [
@@ -22,7 +22,7 @@ export const appRoutes:Routes = [
   { path: 'frokostveske', component: BreakfastBagsComponent, data: { animation: 'page6' } },
   { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page7' } },
   { path: 'kontakt', component: ContactComponent, data: { animation: 'page8' } },
-  { path: 'overtrekker', component: DraftsComponent, data: { animation: 'page9' } },
+  { path: 'overtrekker', component: CoversComponent, data: { animation: 'page9' } },
   { path: 'galeria', component: GalleryComponent, data: { animation: 'page10' } },
   { path: '', component: HomeComponent, data: { animation: 'page11' } },
   { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page12' } },

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   title = "Om meg";
-  description = "Jeg har over 20 års erfaring med å sy. Sying er min lidenskap. Jeg spesialiserer meg på tunge materialer som polyester, kalesjestoff, skai, skinn, folie. I mitt yrkesarbeid har jeg designet og sydd forskjellige ting, slike som:";
+  description = "Jeg heter Hanna. Jeg har over 20 års erfaring med å sy. Sying er min lidenskap. Jeg spesialiserer meg på tunge materialer som polyester, kalesjestoff, skai, skinn, folie. I mitt yrkesarbeid har jeg designet og sydd forskjellige ting, slike som:";
   list = [
     "poser og ryggsekker",
     "poser til verktøy",

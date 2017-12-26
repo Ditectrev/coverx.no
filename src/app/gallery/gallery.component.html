@@ -12,11 +12,14 @@
             [class.filter-active]="filterBy==='all'"
             (click)="filterBy='all'">Alle</li>
           <li role="presentation"
+              [class.filter-active]="filterBy==='covers'"
+              (click)="filterBy='covers'">Overtrekker</li>
+          <li role="presentation"
+              [class.filter-active]="filterBy==='boats'"
+              (click)="filterBy='boats'">Battilbehor</li>
+          <li role="presentation"
               [class.filter-active]="filterBy==='bags'"
               (click)="filterBy='bags'">Vesker</li>
-          <li role="presentation"
-              [class.filter-active]="filterBy==='cleaning-bags'"
-              (click)="filterBy='cleaning-bags'">Rengjøringvesker</li>
           <!--<li role="presentation"-->
               <!--[class.filter-active]="filterBy==='others'"-->
               <!--(click)="filterBy='others'">Andre</li>-->
@@ -28,7 +31,7 @@
         <li role="presentation"
             *ngFor="let image of (visibleImages | imageFilter:filterBy)">
           <!--<a [routerLink]="['/image', image.id]">-->
-            <img src="{{ image.url }}" class="tn" height="200">
+            <img src="{{ image.url }}" class="tn" height="250" width="250">
           <!--</a>-->
         </li>
       </ul>
