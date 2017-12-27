@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
-import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from "@angular/platform-browser";
+import { HttpModule } from "@angular/http";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { WINDOW_PROVIDERS } from './shared/window.service';
 import { ImageService } from './shared/image.service';
 import { ImageFilterPipe } from './shared/filter.pipe';
+import { MailService } from "./shared/mail.service";
 
 import { SmoothScrollToDirective, SmoothScrollDirective } from "../../node_modules/ng2-smooth-scroll";
 import { AgmCoreModule } from '@agm/core';
@@ -36,12 +37,6 @@ import { AgmCoreModule } from '@agm/core';
 import { NgxImageGalleryModule } from "ngx-image-gallery";
 
 import { appRoutes } from "../routes";
-
-export class MyHammerConfig extends HammerGestureConfig  {
-  overrides = <any>{
-    'swipe': {velocity: 0.4, threshold: 20} // override default settings
-  }
-}
 
 @NgModule({
   declarations: [
@@ -72,6 +67,7 @@ export class MyHammerConfig extends HammerGestureConfig  {
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpModule,
     NgxImageGalleryModule,
     // CountoModule,
     RouterModule.forRoot(appRoutes),
@@ -79,10 +75,7 @@ export class MyHammerConfig extends HammerGestureConfig  {
       apiKey: 'AIzaSyA4C0OuttrXwqjsHNQhIjYvPeQyq7zLvG4'
     })
   ],
-  providers: [WINDOW_PROVIDERS, ImageService, {
-    provide: HAMMER_GESTURE_CONFIG,
-    useClass: MyHammerConfig
-  }],
+  providers: [WINDOW_PROVIDERS, ImageService, MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

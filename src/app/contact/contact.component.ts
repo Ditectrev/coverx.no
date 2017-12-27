@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl, Validators} from "@angular/forms";
+import { MailService, IMessage } from "../shared/mail.service";
 
 @Component({
   selector: 'app-contact',
@@ -7,12 +8,13 @@ import {FormGroup, FormControl, Validators} from "@angular/forms";
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  title: string = 'Vår plassering';
+  title: string = 'Kontakt';
+
   lat: number = 61.354352;
   lng: number = 7.252331;
   signupForm: FormGroup;
 
-  constructor() { }
+  constructor(private mailService: MailService) { }
 
   ngOnInit() {
     // Set up form inputs.
@@ -26,8 +28,15 @@ export class ContactComponent implements OnInit {
     })
   }
 
-  // Reset form on submit.
-  onSubmit() {
-    this.signupForm.reset();
+
+  onSubmit(message: IMessage) {
+    this.mailService.sendEmail(message).subscribe(res => {
+      // console.log('MailService success', res);
+      this.signupForm.reset(); // Reset form on submit.
+    }, error => {
+      // console.log('MailService error', error);
+    });
+    // console.log(this.signupForm.value.userData.name);
+    // console.log(message);
   }
 }

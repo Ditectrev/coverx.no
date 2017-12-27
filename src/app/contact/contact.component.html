@@ -1,7 +1,7 @@
 <section id="contact">
   <div class="container wow fadeInUp">
     <div class="section-header">
-      <h3 class="section-title">Kontakt</h3>
+      <h3 class="section-title">{{ title }}</h3>
       <p class="section-description">Non vos have ullus questions? Ne liberum contactus nos!</p>
     </div>
   </div>
@@ -35,7 +35,7 @@
       </div>
       <div class="col-lg-5 col-md-8">
         <div class="form">
-          <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" role="form" class="contactForm">
+          <form [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm.value.userData)" role="form" class="contactForm">
             <div formGroupName="userData">
               <div class="form-group">
                 <input
