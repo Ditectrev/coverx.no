@@ -31,12 +31,6 @@ export class AppComponent implements AfterViewInit, OnChanges {
     new WOW().init(); // Initialize WOW.js
   }
 
-  scrollToTop() {
-    document.body.scrollTop = document.documentElement.scrollTop = 0; // Scroll to top.
-    this.isVisible = !this.isVisible;
-    // this.elem.setAttribute("style", "display: none");
-  }
-
   getRouterOutletState(routerOutlet: RouterOutlet) {
     const routeData = routerOutlet.activatedRouteData['animation'];
     return routeData ? routeData : 'rootPage';

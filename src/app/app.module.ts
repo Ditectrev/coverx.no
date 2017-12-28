@@ -27,7 +27,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { WINDOW_PROVIDERS } from './shared/window.service';
 import { MailService } from "./shared/mail.service";
 
-import { SmoothScrollToDirective, SmoothScrollDirective } from "../../node_modules/ng2-smooth-scroll";
 import { AgmCoreModule } from '@agm/core';
 // import { CountoModule }  from 'angular2-counto';
 import { NgxImageGalleryModule } from "ngx-image-gallery";
@@ -45,8 +44,6 @@ import { appRoutes } from "../routes";
     BoatCoversComponent,
     BoatChairsComponent,
     FooterComponent,
-    SmoothScrollToDirective,
-    SmoothScrollDirective,
     CleaningBagsComponent,
     BagsComponent,
     MopperBagsComponent,
