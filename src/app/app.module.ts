@@ -10,7 +10,6 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
 import { AboutComponent } from './about/about.component';
 import { CounterComponent } from './counter/counter.component';
 import { CallToActionComponent } from './call-to-action/call-to-action.component';
-import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { BoatCoversComponent } from './boat-covers/boat-covers.component';
 import { BoatChairsComponent } from './boat-chairs/boat-chairs.component';
@@ -27,8 +26,6 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { WINDOW_PROVIDERS } from './shared/window.service';
-import { ImageService } from './shared/image.service';
-import { ImageFilterPipe } from './shared/filter.pipe';
 import { MailService } from "./shared/mail.service";
 
 import { SmoothScrollToDirective, SmoothScrollDirective } from "../../node_modules/ng2-smooth-scroll";
@@ -46,7 +43,6 @@ import { appRoutes } from "../routes";
     AboutComponent,
     CounterComponent,
     CallToActionComponent,
-    GalleryComponent,
     ContactComponent,
     BoatCoversComponent,
     BoatChairsComponent,
@@ -54,7 +50,6 @@ import { appRoutes } from "../routes";
     SmoothScrollToDirective,
     SmoothScrollDirective,
     CleaningBagsComponent,
-    ImageFilterPipe,
     BagsComponent,
     MopperBagsComponent,
     BreakfastBagsComponent,
@@ -75,7 +70,7 @@ import { appRoutes } from "../routes";
       apiKey: 'AIzaSyA4C0OuttrXwqjsHNQhIjYvPeQyq7zLvG4'
     })
   ],
-  providers: [WINDOW_PROVIDERS, ImageService, MailService],
+  providers: [WINDOW_PROVIDERS, MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

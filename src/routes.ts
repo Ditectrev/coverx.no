@@ -1,5 +1,4 @@
 import { Routes } from "@angular/router";
-import { GalleryComponent } from "./app/gallery/gallery.component";
 import {AboutComponent} from "./app/about/about.component";
 import {BagsComponent} from "./app/bags/bags.component";
 import {BoatChairsComponent} from "./app/boat-chairs/boat-chairs.component";
@@ -23,9 +22,8 @@ export const appRoutes:Routes = [
   { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page7' } },
   { path: 'kontakt', component: ContactComponent, data: { animation: 'page8' } },
   { path: 'overtrekker', component: CoversComponent, data: { animation: 'page9' } },
-  { path: 'galeria', component: GalleryComponent, data: { animation: 'page10' } },
-  { path: '', component: HomeComponent, data: { animation: 'page11' } },
-  { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page12' } },
-  { path: 'verktoyveske', component: SpecialistBagsComponent, data: { animation: 'page13' } },
+  { path: '', component: HomeComponent, data: { animation: 'page10' } },
+  { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page11' } },
+  { path: 'verktoyveske', component: SpecialistBagsComponent, data: { animation: 'page12' } },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
