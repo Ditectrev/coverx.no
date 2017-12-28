@@ -34,7 +34,7 @@ section .social-links {
 }
 
 section .social-links a {
-  background: #333333;
+  background: #3b5998;
   border-radius: 50%;
   color: #ffffff;
   display: inline-block;
@@ -47,8 +47,8 @@ section .social-links a {
   width: 36px;
 }
 
-section .social-links a:hover {
-  background: #2dc997;
+section .social-links > a.facebook:hover {
+  background: #5d7aa9;
   color: #ffffff;
 }
 

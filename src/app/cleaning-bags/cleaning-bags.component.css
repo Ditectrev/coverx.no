@@ -9,62 +9,13 @@ img {
   margin: 35px 0;
 }
 
+p {
+  font-size: 20px;
+  line-height: 22px;
+}
+
 .section-header {
   margin-bottom: 60px;
-}
-
-.box {
-  background: #fafafa;
-  border: 1px solid #e6e6e6;
-  height: 200px;
-  margin-bottom: 50px;
-  padding: 50px 20px;
-  position: relative;
-  text-align: center;
-}
-
-.icon {
-  border: 6px solid #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  left: calc(50% - 36px);
-  position: absolute;
-  top: -36px;
-  transition: .2s;
-}
-
-.icon a {
-  background: #2dc997;
-  border: 2px solid #2dc997;
-  border-radius: 50%;
-  display: inline-block;
-  padding: 16px;
-  transition: .3s;
-}
-
-.icon i {
-  color: #ffffff;
-  font-size: 24px;
-}
-
-.box:hover .icon i {
-  color: #2dc997;
-}
-
-.box:hover .icon a {
-  background: #ffffff;
-  color: #2dc997;
-}
-
-.title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-}
-
-.title a {
-  color: #111111;
 }
 
 @media (max-width: 1080px) {

@@ -15,7 +15,6 @@ import { FooterComponent } from './footer/footer.component';
 import { CleaningBagsComponent } from './cleaning-bags/cleaning-bags.component';
 import { BagsComponent } from './bags/bags.component';
 import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
-import { BreakfastBagsComponent } from './breakfast-bags/breakfast-bags.component';
 import { SpecialistBagsComponent } from './specialist-bags/specialist-bags.component';
 import { BoatsComponent } from './boats/boats.component';
 import { CoversComponent } from './covers/covers.component';
@@ -44,7 +43,6 @@ import { appRoutes } from "../routes";
     CleaningBagsComponent,
     BagsComponent,
     MopperBagsComponent,
-    BreakfastBagsComponent,
     SpecialistBagsComponent,
     BoatsComponent,
     CoversComponent,

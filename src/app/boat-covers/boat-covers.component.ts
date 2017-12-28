@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class BoatCoversComponent {
   title = "Båtkalesjer";
-  description1 = "Trenger du å reperere din gamle kaleskje eller vill du ha ny?";
+  description1 = "Trenger du å reparere din gammel kalesje eller vil du ha ny?";
   description2 = "Send meg e-post.";
   images = [
     "assets/images/batkalesjer1.jpg",

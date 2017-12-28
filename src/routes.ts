@@ -4,7 +4,6 @@ import {BagsComponent} from "./app/bags/bags.component";
 import {BoatChairsComponent} from "./app/boat-chairs/boat-chairs.component";
 import {BoatCoversComponent} from "./app/boat-covers/boat-covers.component";
 import {BoatsComponent} from "./app/boats/boats.component";
-import {BreakfastBagsComponent} from "./app/breakfast-bags/breakfast-bags.component";
 import {CleaningBagsComponent} from "./app/cleaning-bags/cleaning-bags.component";
 import {ContactComponent} from "./app/contact/contact.component";
 import {MopperBagsComponent} from "./app/mopper-bags/mopper-bags.component";
@@ -18,12 +17,11 @@ export const appRoutes:Routes = [
   { path: 'batputer', component: BoatChairsComponent, data: { animation: 'page3' } },
   { path: 'batkalesjer', component: BoatCoversComponent, data: { animation: 'page4' } },
   { path: 'battilbehor', component: BoatsComponent, data: { animation: 'page5' } },
-  { path: 'frokostveske', component: BreakfastBagsComponent, data: { animation: 'page6' } },
-  { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page7' } },
-  { path: 'kontakt', component: ContactComponent, data: { animation: 'page8' } },
-  { path: 'overtrekker', component: CoversComponent, data: { animation: 'page9' } },
-  { path: '', component: HomeComponent, data: { animation: 'page10' } },
-  { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page11' } },
-  { path: 'verktoyveske', component: SpecialistBagsComponent, data: { animation: 'page12' } },
+  { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page6' } },
+  { path: 'kontakt', component: ContactComponent, data: { animation: 'page7' } },
+  { path: 'overtrekker', component: CoversComponent, data: { animation: 'page8' } },
+  { path: '', component: HomeComponent, data: { animation: 'page9' } },
+  { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page10' } },
+  { path: 'verktoyveske', component: SpecialistBagsComponent, data: { animation: 'page11' } },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
