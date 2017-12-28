@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { AboutComponent } from './about/about.component';
-import { CounterComponent } from './counter/counter.component';
 import { ContactComponent } from './contact/contact.component';
 import { BoatCoversComponent } from './boat-covers/boat-covers.component';
 import { BoatChairsComponent } from './boat-chairs/boat-chairs.component';
@@ -28,7 +27,6 @@ import { WINDOW_PROVIDERS } from './shared/window.service';
 import { MailService } from "./shared/mail.service";
 
 import { AgmCoreModule } from '@agm/core';
-// import { CountoModule }  from 'angular2-counto';
 import { NgxImageGalleryModule } from "ngx-image-gallery";
 
 import { appRoutes } from "../routes";
@@ -39,7 +37,6 @@ import { appRoutes } from "../routes";
     HeaderComponent,
     VideoPlayerComponent,
     AboutComponent,
-    CounterComponent,
     ContactComponent,
     BoatCoversComponent,
     BoatChairsComponent,
@@ -59,7 +56,6 @@ import { appRoutes } from "../routes";
     ReactiveFormsModule,
     HttpModule,
     NgxImageGalleryModule,
-    // CountoModule,
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA4C0OuttrXwqjsHNQhIjYvPeQyq7zLvG4'
