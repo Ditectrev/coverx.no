@@ -15,20 +15,26 @@ import { FooterComponent } from './footer/footer.component';
 import { CleaningBagsComponent } from './cleaning-bags/cleaning-bags.component';
 import { BagsComponent } from './bags/bags.component';
 import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
-import { SpecialistBagsComponent } from './specialist-bags/specialist-bags.component';
 import { BoatsComponent } from './boats/boats.component';
 import { CoversComponent } from './covers/covers.component';
 import { HomeComponent } from './home/home.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import {GalleryConfig, GalleryModule} from 'ng-gallery'
 
 import { WINDOW_PROVIDERS } from './shared/window.service';
 import { MailService } from "./shared/mail.service";
 
 import { AgmCoreModule } from '@agm/core';
-import { NgxImageGalleryModule } from "ngx-image-gallery";
 
 import { appRoutes } from "../routes";
+import { MusicBagsComponent } from './music-bags/music-bags.component';
+import { MusicCoversComponent } from './music-covers/music-covers.component';
+
+
+export const config: GalleryConfig = {
+  // ...
+}
 
 @NgModule({
   declarations: [
@@ -43,18 +49,19 @@ import { appRoutes } from "../routes";
     CleaningBagsComponent,
     BagsComponent,
     MopperBagsComponent,
-    SpecialistBagsComponent,
     BoatsComponent,
     CoversComponent,
-    HomeComponent
+    HomeComponent,
+    MusicBagsComponent,
+    MusicCoversComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpModule,
-    NgxImageGalleryModule,
     RouterModule.forRoot(appRoutes),
+    GalleryModule.forRoot(config),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA4C0OuttrXwqjsHNQhIjYvPeQyq7zLvG4'
     })

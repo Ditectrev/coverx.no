@@ -5,13 +5,10 @@
       <p class="section-description">{{ description }}</p>
     </div>
     <div class="row wow fadeInUp">
-      <img
-        class="col-lg-6 col-md-12"
-        *ngFor="let image of images"
-        src="{{ image }}"
-        alt="Båtputer"
-        title="Båtputer"
-      >
+      <div gallerize>
+        <img class="col-lg-6 col-md-12" src="assets/images/batputer1.jpg" src-full="assets/images/batputer1.jpg">
+        <img class="col-lg-6 col-md-12" src="assets/images/batputer2.jpg" src-full="assets/images/batputer2.jpg">
+      </div>
     </div>
   </div>
 </section>

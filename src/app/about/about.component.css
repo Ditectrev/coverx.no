@@ -36,3 +36,9 @@ section .about-container p:last-child {
     padding-top: 15px;
   }
 }
+
+img {
+  height: 300px;
+  margin: 5px;
+  text-align: center;
+}

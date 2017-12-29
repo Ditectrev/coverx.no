@@ -7,9 +7,10 @@ import {BoatsComponent} from "./app/boats/boats.component";
 import {CleaningBagsComponent} from "./app/cleaning-bags/cleaning-bags.component";
 import {ContactComponent} from "./app/contact/contact.component";
 import {MopperBagsComponent} from "./app/mopper-bags/mopper-bags.component";
-import {SpecialistBagsComponent} from "./app/specialist-bags/specialist-bags.component";
 import {CoversComponent} from "./app/covers/covers.component";
 import {HomeComponent} from "./app/home/home.component";
+import {MusicBagsComponent} from "./app/music-bags/music-bags.component";
+import {MusicCoversComponent} from "./app/music-covers/music-covers.component";
 
 export const appRoutes:Routes = [
   { path: 'om-meg', component: AboutComponent, data: { animation: 'page1' } },
@@ -22,6 +23,7 @@ export const appRoutes:Routes = [
   { path: 'overtrekker', component: CoversComponent, data: { animation: 'page8' } },
   { path: '', component: HomeComponent, data: { animation: 'page9' } },
   { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page10' } },
-  { path: 'verktoyveske', component: SpecialistBagsComponent, data: { animation: 'page11' } },
+  { path: 'musikkvesker', component: MusicBagsComponent, data: { animation: 'page12' } },
+  { path: 'musikkovertrekker', component: MusicCoversComponent, data: { animation: 'page13' } },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
