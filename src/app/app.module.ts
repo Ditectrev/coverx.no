@@ -18,6 +18,8 @@ import { MopperBagsComponent } from './mopper-bags/mopper-bags.component';
 import { BoatsComponent } from './boats/boats.component';
 import { CoversComponent } from './covers/covers.component';
 import { HomeComponent } from './home/home.component';
+import { MusicBagsComponent } from './music-bags/music-bags.component';
+import { MusicCoversComponent } from './music-covers/music-covers.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {GalleryConfig, GalleryModule} from 'ng-gallery'
@@ -26,10 +28,9 @@ import { WINDOW_PROVIDERS } from './shared/window.service';
 import { MailService } from "./shared/mail.service";
 
 import { AgmCoreModule } from '@agm/core';
+import { MomentModule } from "angular2-moment";
 
 import { appRoutes } from "../routes";
-import { MusicBagsComponent } from './music-bags/music-bags.component';
-import { MusicCoversComponent } from './music-covers/music-covers.component';
 
 
 export const config: GalleryConfig = {
@@ -60,6 +61,7 @@ export const config: GalleryConfig = {
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpModule,
+    MomentModule,
     RouterModule.forRoot(appRoutes),
     GalleryModule.forRoot(config),
     AgmCoreModule.forRoot({

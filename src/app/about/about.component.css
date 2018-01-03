@@ -39,6 +39,5 @@ section .about-container p:last-child {
 
 img {
   height: 300px;
-  margin: 5px;
-  text-align: center;
+  margin: 35px 0;
 }
