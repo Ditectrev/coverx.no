@@ -2,7 +2,6 @@
   <div class="container wow fadeInUp">
     <div class="section-header">
       <h3 class="section-title">{{ title }}</h3>
-      <p class="section-description">Non vos have ullus questions? Ne liberum contactus nos!</p>
     </div>
   </div>
   <agm-map [latitude]="lat" [longitude]="lng">
@@ -14,19 +13,19 @@
         <div class="info">
           <div>
             <i class="fa fa-map-marker"></i>
-            <p>Høgisvegen 44,<br>6873 Marifjøra</p>
+            <p>{{ street }},<br>{{ city }}</p>
           </div>
           <div>
             <i class="fa fa-envelope"></i>
-            <p>kontakt@coverx.no</p>
+            <p>{{ mail }}</p>
           </div>
           <div>
             <i class="fa fa-phone"></i>
-            <p>+47 47 74 26 48</p>
+            <p>{{ phone }}</p>
           </div>
           <div>
-            <i class="fa  fa-address-card-o"></i>
-            <p>Org. Nr. 916559305</p>
+            <i class="fa fa-address-card-o"></i>
+            <p>{{ orgNumber }}</p>
           </div>
         </div>
         <div class="social-links">
@@ -48,7 +47,7 @@
                 >
                 <span
                   *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched"
-                  class="help-block">Skriv navnet ditt</span>
+                  class="help-block">{{ wrongName }}</span>
               </div>
               <div class="form-group">
                 <input
@@ -60,7 +59,7 @@
                   placeholder="Din epost">
                 <span
                   *ngIf="!signupForm.get('userData.email').valid && signupForm.get('userData.email').touched"
-                  class="help-block">Skriv din epost</span>
+                  class="help-block">{{ wrongEmail }}</span>
               </div>
               <div class="form-group">
                 <input
@@ -72,7 +71,7 @@
                   placeholder="Emne">
                 <span
                   *ngIf="!signupForm.get('userData.subject').valid && signupForm.get('userData.subject').touched"
-                  class="help-block">Skriv emne</span>
+                  class="help-block">{{ wrongSubject }}</span>
               </div>
               <div class="form-group">
                 <textarea
@@ -84,13 +83,13 @@
                 ></textarea>
                 <span
                   *ngIf="!signupForm.get('userData.message').valid && signupForm.get('userData.message').touched"
-                  class="help-block">Skriv melding</span>
+                  class="help-block">{{ wrongMessage }}</span>
               </div>
               <div class="text-center">
-                <button type="submit">Sende melding</button>
+                <button type="submit">{{ sendMessage }}</button>
                 <span
                   *ngIf="!signupForm.valid && signupForm.touched"
-                  class="help-block">Vennligst fyll inn gyldige data!</span>
+                  class="help-block">{{ wrongForm }}</span>
               </div>
             </div>
           </form>

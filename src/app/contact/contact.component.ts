@@ -8,7 +8,20 @@ import { MailService, IMessage } from "../shared/mail.service";
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  title: string = 'Kontakt';
+  title = 'Kontakt';
+
+  street = 'Høgisvegen 44';
+  city = '6873 Marifjøra';
+  mail = 'kontakt@coverx.no';
+  phone = '+47 47 74 26 48';
+  orgNumber = 'Org. Nr. 916559305';
+
+  wrongName = 'Skriv navnet ditt';
+  wrongEmail = 'Skriv din epost';
+  wrongSubject = 'Skriv emne';
+  wrongMessage = 'Skriv melding';
+  sendMessage = 'Sende melding';
+  wrongForm = 'Vennligst fyll inn gyldige data!';
 
   lat: number = 61.354352;
   lng: number = 7.252331;
