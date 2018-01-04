@@ -5,8 +5,10 @@ section {
 }
 
 img {
-  height: 300px;
-  margin: 35px 0;
+  display: block;
+  height: 400px;
+  margin: 0 auto 20px;
+  width: 500px;
 }
 
 @media (max-width: 1080px) {

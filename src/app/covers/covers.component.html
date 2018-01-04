@@ -2,17 +2,19 @@
   <div class="container wow fadeIn">
     <div class="section-header">
       <h3 class="section-title">{{ title }}</h3>
-      <p class="section-description">{{ description1 }}<br><strong>{{ description2 }}</strong></p>
     </div>
-    <div class="row wow fadeInUp">
-      <img
-        class="col-lg-6 col-md-12"
-        *ngFor="let image of images"
-        src="{{ image }}"
-        alt="Overtrekker"
-        title="Overtrekker"
+    <div class="row">
+      <div
+        class="wow fadeInUp col-lg-12 col-md-12"
+        *ngFor="let item of items"
       >
-
+        <img
+          src="{{ item.image }}"
+          alt="{{ item.name }}"
+          title="{{ item.name }}"
+        >
+        <button class="btn btn-primary center-block" routerLink="{{ item.url }}">{{ item.name }}</button>
+      </div>
     </div>
   </div>
 </section>

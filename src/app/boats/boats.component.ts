@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./boats.component.css']
 })
 export class BoatsComponent {
-  title = "Battilbehor";
+  title = "Båttilbehør";
   items = [
     {"name": "Båtkalesjer", "image": "assets/images/batkalesjer1.jpg", "url": "/batkalesjer"},
     {"name": "Båtputer", "image": "assets/images/batputer1.jpg", "url": "/batputer"}
