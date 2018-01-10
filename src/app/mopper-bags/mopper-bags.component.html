@@ -13,11 +13,7 @@
     </div>
     <div class="row wow fadeInUp">
       <div gallerize>
-        <img class="col-lg-6 col-md-12" src="assets/images/mopperveske1.jpg" src-full="assets/images/mopperveske1.jpg">
-        <img class="col-lg-6 col-md-12" src="assets/images/mopperveske2.jpg" src-full="assets/images/mopperveske2.jpg">
-        <img class="col-lg-6 col-md-12" src="assets/images/mopperveske3.jpg" src-full="assets/images/mopperveske3.jpg">
-        <img class="col-lg-6 col-md-12" src="assets/images/mopperveske4.jpg" src-full="assets/images/mopperveske4.jpg">
-        <img class="col-lg-6 col-md-12" src="assets/images/mopperveske5.jpg" src-full="assets/images/mopperveske5.jpg">
+        <img class="col-lg-6 col-md-12 img-responsive center-block" *ngFor="let image of images" src="{{ image }}">
       </div>
     </div>
   </div>

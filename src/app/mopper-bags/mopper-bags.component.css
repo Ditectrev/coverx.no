@@ -6,7 +6,8 @@ section {
 
 img {
   height: 300px;
-  margin: 35px 0;
+  margin: 15px auto;
+  width: 384px;
 }
 
 p {
@@ -16,10 +17,4 @@ p {
 
 .section-header {
   margin-bottom: 60px;
-}
-
-@media (max-width: 1080px) {
-  img {
-    width: 100%;
-  }
 }

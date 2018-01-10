@@ -6,8 +6,7 @@
     </div>
     <div class="row wow fadeInUp">
       <div gallerize>
-        <img class="col-lg-6 col-md-12" src="assets/images/batkalesjer1.jpg" src-full="assets/images/batkalesjer1.jpg">
-        <img class="col-lg-6 col-md-12" src="assets/images/batkalesjer2.jpg" src-full="assets/images/batkalesjer2.jpg">
+        <img class="col-lg-6 col-md-12 img-responsive center-block" *ngFor="let image of images" src="{{ image }}">
       </div>
     </div>
   </div>

@@ -5,18 +5,8 @@
       <p class="section-description">{{ description }}</p>
     </div>
     <div class="row wow fadeInUp">
-      <div class="col-xs-12">
-        <div gallerize>
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker1.jpg" src-full="assets/images/musikkvesker1.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker2.jpg" src-full="assets/images/musikkvesker2.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker3.jpg" src-full="assets/images/musikkvesker3.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker4.jpg" src-full="assets/images/musikkvesker4.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker5.jpg" src-full="assets/images/musikkvesker5.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker6.jpg" src-full="assets/images/musikkvesker6.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker7.jpg" src-full="assets/images/musikkvesker7.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker8.jpg" src-full="assets/images/musikkvesker8.jpg">
-          <img class="col-lg-6 col-md-12" src="assets/images/musikkvesker9.jpg" src-full="assets/images/musikkvesker9.jpg">
-        </div>
+      <div gallerize>
+        <img class="col-lg-6 col-md-12 img-responsive center-block" *ngFor="let image of images" src="{{ image }}">
       </div>
     </div>
   </div>

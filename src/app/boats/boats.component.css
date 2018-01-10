@@ -6,13 +6,6 @@ section {
 
 img {
   display: block;
-  height: 400px;
+  height: 240px;
   margin: 35px 0;
-  width: 500px;
-}
-
-@media (max-width: 1080px) {
-  img {
-    width: 100%;
-  }
 }

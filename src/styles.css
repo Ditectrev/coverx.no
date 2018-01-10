@@ -55,3 +55,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   padding-bottom: 20px;
 }
+
+/* Angular Image Gallery Lightbox full screen. */
+.g-overlay {
+  width: 100% !important;
+  height: 100% !important;
+}
+gallery-lightbox {
+  height: 100% !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+gallery {
+  height: 100% !important;
+  display: flex !important;
+}
+gallery-main {
+  height: 100% !important;
+  width: 100% !important;
+}
+.g-container {
+  height: 100% !important;
+  width: 100% !important;
+}

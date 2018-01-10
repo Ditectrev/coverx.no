@@ -4,16 +4,11 @@
       <h3 class="section-title">{{ title }}</h3>
     </div>
     <div class="row">
-      <div
-        class="wow fadeInUp col-lg-6 col-md-12"
-        *ngFor="let item of items"
-      >
-        <img
-          src="{{ item.image }}"
-          alt="{{ item.name }}"
-          title="{{ item.name }}"
-        >
-        <button class="btn btn-primary center-block" routerLink="{{ item.url }}">{{ item.name }}</button>
+      <div class="wow fadeInUp col-lg-4 col-md-6" *ngFor="let item of items">
+        <div gallerize>
+          <img class="img-responsive center-block" src="{{ item.image }}">
+          <button class="btn btn-primary center-block" routerLink="{{ item.url }}">{{ item.name }}</button>
+        </div>
       </div>
     </div>
   </div>

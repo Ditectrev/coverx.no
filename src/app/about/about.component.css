@@ -3,6 +3,12 @@ section {
   padding: 19vh 0;
 }
 
+img {
+  height: 200px;
+  margin: 15px auto;
+  width: 384px;
+}
+
 section .about-container .background {
   background: url("../../assets/images/hanna.jpg") center top no-repeat;
   height: 334px;
@@ -19,12 +25,12 @@ section .about-container .title {
   font-weight: 700;
 }
 
-section .about-container p, section .about-container ul {
-  line-height: 24px;
+section .gallery {
+  margin-top: 320px;
 }
 
-section .about-container p:last-child {
-  margin-bottom: 0;
+section .about-container p, section .about-container ul {
+  line-height: 24px;
 }
 
 @media (max-width: 768px) {
@@ -35,9 +41,4 @@ section .about-container p:last-child {
   section .about-container .title {
     padding-top: 15px;
   }
-}
-
-img {
-  height: 300px;
-  margin: 35px 0;
 }

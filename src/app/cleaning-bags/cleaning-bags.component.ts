@@ -12,6 +12,10 @@ export class CleaningBagsComponent {
   price = "890 kr. netto";
   images = [
     "assets/images/rengjoringvesker1.jpg",
-    "assets/images/rengjoringvesker2.jpg"
-  ];
+    "assets/images/rengjoringvesker2.jpg",
+    "assets/images/rengjoringvesker3.jpg",
+    "assets/images/rengjoringvesker4.jpg",
+    "assets/images/rengjoringvesker5.jpg",
+    "assets/images/rengjoringvesker6.jpg"
+  ]
 }

@@ -9,4 +9,8 @@ export class BoatCoversComponent {
   title = "Båtkalesjer";
   description1 = "Trenger du å reparere din gammel kalesje eller vil du ha ny?";
   description2 = "Send meg e-post.";
+  images = [
+    "assets/images/batkalesjer1.jpg",
+    "assets/images/batkalesjer2.jpg"
+  ]
 }
