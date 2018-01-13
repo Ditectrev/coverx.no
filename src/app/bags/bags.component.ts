@@ -9,7 +9,7 @@ export class BagsComponent {
   title = "Vesker";
   items = [
     {"name": "Rengjøringvesker", "image": "assets/images/rengjoringvesker6.jpg", "url": "/rengjoringvesker"},
-    {"name": "Mopperveske", "image": "assets/images/mopperveske1.jpg", "url": "/mopperveske"},
+    {"name": "Moppervesker", "image": "assets/images/moppervesker1.jpg", "url": "/moppervesker"},
     {"name": "Musikkvesker", "image": "assets/images/musikkvesker4.jpg", "url": "/musikkvesker"}
   ]
 }

@@ -12,7 +12,7 @@ section .info {
 }
 
 section .info i {
-  color: #2dc997;
+  color: #ee9400;
   float: left;
   font-size: 32px;
 }
@@ -53,8 +53,8 @@ section .social-links > a.facebook:hover {
 }
 
 section .form #sendmessage {
-  border: 1px solid #2dc997;
-  color: #2dc997;
+  border: 1px solid #ee9400;
+  color: #ee9400;
   display: none;
   font-weight: 600;
   margin-bottom: 15px;
@@ -92,7 +92,7 @@ section .form input, section .form textarea {
 }
 
 section .form button[type="submit"] {
-  background: #2dc997;
+  background: #ee9400;
   border: 0;
   color: #ffffff;
   padding: 10px 24px;
@@ -100,5 +100,5 @@ section .form button[type="submit"] {
 }
 
 section .form button[type="submit"]:hover {
-  background: #51d8ad;
+  background: #ee9400;
 }

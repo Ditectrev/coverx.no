@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #2dc997;
+  color: #ee9400;
 }
 
 a:hover, a:active, a:focus {
@@ -54,6 +54,86 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999999;
   text-align: center;
   padding-bottom: 20px;
+}
+
+.btn-custom {
+  border: 2px solid #ee9400;
+  border-radius: 50px;
+  color: #ee9400;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 28px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.btn-custom:hover {
+  background: #aa5100;
+  border: 2px solid #aa5100;
+}
+
+/* Images in galleries effect. */
+.img-gallery {
+  opacity: .5;
+  transition: all .5s ease;
+}
+
+.img-gallery:hover {
+  opacity: 1;
+}
+
+/* Main category images effect. */
+.image-effect {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-effect img {
+  height: 100%;
+}
+
+.image-effect:hover {
+  cursor: pointer;
+}
+
+.image-effect .image-first {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  opacity: 1;
+}
+
+.image-effect .image-second {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: scale(5);
+  transition: all .5s;
+  opacity: 0;
+}
+
+.image-effect:hover .image-second {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+.image-effect .image-overlay {
+  background: rgba(0, 0, 0, .5);
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.image-effect .image-overlay:hover {
+  opacity: 1;
 }
 
 /* Angular Image Gallery Lightbox full screen. */

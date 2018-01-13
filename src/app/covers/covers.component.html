@@ -5,10 +5,14 @@
     </div>
     <div class="row">
       <div class="wow fadeInUp col-xs-12" *ngFor="let item of items">
-        <div gallerize>
-          <img class="img-responsive center-block" src="{{ item.image }}">
-          <button class="btn btn-primary center-block" routerLink="{{ item.url }}">{{ item.name }}</button>
-        </div>
+        <a routerLink="{{ item.url }}">
+          <div class="image-effect">
+            <img class="img-responsive center-block image-first" src="{{ item.image }}">
+            <img class="img-responsive center-block image-second" src="{{ item.image }}">
+            <div class="image-overlay"></div>
+          </div>
+        </a>
+        <button class="btn-custom center-block" routerLink="{{ item.url }}">{{ item.name }}</button>
       </div>
     </div>
   </div>

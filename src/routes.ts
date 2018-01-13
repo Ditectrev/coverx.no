@@ -13,17 +13,17 @@ import {MusicBagsComponent} from "./app/music-bags/music-bags.component";
 import {MusicCoversComponent} from "./app/music-covers/music-covers.component";
 
 export const appRoutes:Routes = [
-  { path: 'om-meg', component: AboutComponent, data: { animation: 'page1' } },
-  { path: 'vesker', component: BagsComponent, data: { animation: 'page2' } },
-  { path: 'batputer', component: BoatChairsComponent, data: { animation: 'page3' } },
-  { path: 'batkalesjer', component: BoatCoversComponent, data: { animation: 'page4' } },
-  { path: 'battilbehor', component: BoatsComponent, data: { animation: 'page5' } },
-  { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page6' } },
-  { path: 'kontakt', component: ContactComponent, data: { animation: 'page7' } },
-  { path: 'overtrekker', component: CoversComponent, data: { animation: 'page8' } },
   { path: '', component: HomeComponent, data: { animation: 'page9' } },
-  { path: 'mopperveske', component: MopperBagsComponent, data: { animation: 'page10' } },
+  { path: 'om-meg', component: AboutComponent, data: { animation: 'page1' } },
+  { path: 'overtrekker', component: CoversComponent, data: { animation: 'page8' } },
   { path: 'musikkvesker', component: MusicBagsComponent, data: { animation: 'page12' } },
+  { path: 'battilbehor', component: BoatsComponent, data: { animation: 'page5' } },
+  { path: 'batkalesjer', component: BoatCoversComponent, data: { animation: 'page4' } },
+  { path: 'batputer', component: BoatChairsComponent, data: { animation: 'page3' } },
+  { path: 'vesker', component: BagsComponent, data: { animation: 'page2' } },
+  { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page6' } },
+  { path: 'moppervesker', component: MopperBagsComponent, data: { animation: 'page10' } },
   { path: 'musikkovertrekker', component: MusicCoversComponent, data: { animation: 'page13' } },
+  { path: 'kontakt', component: ContactComponent, data: { animation: 'page7' } },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];

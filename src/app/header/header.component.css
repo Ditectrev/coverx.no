@@ -93,7 +93,7 @@ header.header-fixed {
 }
 
 .nav-menu > li > a:before {
-  background-color: #2dc997;
+  background-color: #ee9400;
   bottom: 0;
   content: "";
   height: 2px;
@@ -133,7 +133,7 @@ header.header-fixed {
 }
 
 .nav-menu ul li a:hover {
-  background: #2dc997;
+  background: #ee9400;
   color: #ffffff;
 }
 
@@ -196,7 +196,7 @@ header.header-fixed {
 }
 
 #mobile ul .menu-item-active {
-  color: #2dc997;
+  color: #ee9400;
 }
 
 #mobile-body-overly {

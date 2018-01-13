@@ -24,8 +24,6 @@ if (empty($errors)) {
 "<p><strong>Epost:</strong> $from_email</p>" .
 "<p><strong>Emne:</strong> $subject</p>" .
 "<p><strong>Melding:</strong> $message</p>";
-  $topic = "<p>$subject</p>";
-  $content = "<p>$message</p>";
 
   $website = 'CoverX';
   $email_subject = "$website: Ny melding fra $from_name";
