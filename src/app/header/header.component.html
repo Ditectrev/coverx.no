@@ -5,66 +5,44 @@
     </div>
     <nav role="navigation" id="nav-menu-container">
       <ul class="nav-menu">
-        <!-- TODO: Check routerLinkActiveOptions -->
-        <li role="presentation"
-            routerLinkActive="menu-active"
-            [routerLinkActiveOptions]="{exact: true}">
-          <a routerLink="/">Hovedside</a>
-        </li>
+        <!-- Set routerLinkActiveOptions to avoid duplication menu-active class. -->
         <li
           role="presentation"
-          routerLinkActive="menu-active">
-          <a routerLink="/om-meg">Om meg</a>
-        </li>
-        <li
-          role="presentation"
-          routerLinkActive="menu-active">
-          <a routerLink="/overtrekker">Overtrekker</a>
-          <ul>
+          routerLinkActive="menu-active"
+          [routerLinkActiveOptions]="{exact: true}"
+          *ngFor="let route of mainRoutes; let i = index"
+        >
+          <a routerLink="{{ route.url }}">{{ route.name }}</a>
+          <ul *ngIf="i === 2">
             <li
-              role="presentation">
-              <a routerLink="/musikkovertrekker">Musikkovertrekker</a>
+              role="presentation"
+              routerLinkActive="menu-active"
+              [routerLinkActiveOptions]="{exact: true}"
+              *ngFor="let route of subroutesOne;"
+            >
+              <a routerLink="{{ route.url }}">{{ route.name }}</a>
             </li>
           </ul>
-        </li>
-        <li
-          role="presentation"
-          routerLinkActive="menu-active">
-          <a routerLink="/battilbehor">Båttilbehør</a>
-          <ul>
+          <ul *ngIf="i === 3">
             <li
-              role="presentation">
-              <a routerLink="/batkalesjer">Båtkalesjer</a>
-            </li>
-            <li
-              role="presentation">
-              <a routerLink="/batputer">Båtputer</a>
+              role="presentation"
+              routerLinkActive="menu-active"
+              [routerLinkActiveOptions]="{exact: true}"
+              *ngFor="let route of subroutesTwo;"
+            >
+              <a routerLink="{{ route.url }}">{{ route.name }}</a>
             </li>
           </ul>
-        </li>
-        <li
-          role="presentation"
-          routerLinkActive="menu-active">
-          <a routerLink="/vesker">Vesker</a>
-          <ul>
+          <ul *ngIf="i === 4">
             <li
-              role="presentation">
-              <a routerLink="/rengjoringvesker">Rengjøringvesker</a>
-            </li>
-            <li
-              role="presentation">
-              <a routerLink="/moppervesker">Moppervesker</a>
-            </li>
-            <li
-              role="presentation">
-              <a routerLink="/musikkvesker">Musikkvesker</a>
+              role="presentation"
+              routerLinkActive="menu-active"
+              [routerLinkActiveOptions]="{exact: true}"
+              *ngFor="let route of subroutesThree;"
+            >
+              <a routerLink="{{ route.url }}">{{ route.name }}</a>
             </li>
           </ul>
-        </li>
-        <li
-          role="presentation"
-          routerLinkActive="menu-active">
-          <a routerLink="/kontakt">Kontakt</a>
         </li>
       </ul>
     </nav>

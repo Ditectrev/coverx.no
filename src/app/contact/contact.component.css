@@ -62,28 +62,6 @@ section .form #sendmessage {
   text-align: center;
 }
 
-section .form #errormessage {
-  border: 1px solid red;
-  color: red;
-  display: none;
-  font-weight: 600;
-  margin-bottom: 15px;
-  padding: 15px;
-  text-align: center;
-}
-
-section .form #sendmessage.show, section .form #errormessage.show, section .form .show {
-  display: block;
-}
-
-section .form .validation {
-  color: red;
-  display: none;
-  font-size: 13px;
-  font-weight: 400;
-  margin: 0 0 20px;
-}
-
 section .form input, section .form textarea {
   border-radius: 0;
   box-shadow: none;

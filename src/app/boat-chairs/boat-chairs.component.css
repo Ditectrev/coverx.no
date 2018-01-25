@@ -10,3 +10,11 @@ img {
   width: 100%;
 }
 
+p {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}

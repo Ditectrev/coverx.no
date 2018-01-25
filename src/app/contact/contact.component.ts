@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
   lat: number = 61.354352;
   lng: number = 7.252331;
   signupForm: FormGroup;
-  submitted = false;
+  submitted: boolean;
 
   constructor(private mailService: MailService) { }
 
@@ -40,7 +40,9 @@ export class ContactComponent implements OnInit {
         'subject': new FormControl(null, Validators.required),
         'message': new FormControl(null, Validators.required)
       })
-    })
+    });
+
+    this.submitted = false;
   }
 
 
@@ -50,6 +52,7 @@ export class ContactComponent implements OnInit {
     this.mailService.sendEmail(message).subscribe(res => {
       // console.log('MailService success', res);
       this.signupForm.reset(); // Reset form on submit.
+      this.submitted = false;
     }, error => {
       // console.log('MailService error', error);
     });

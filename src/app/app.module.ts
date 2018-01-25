@@ -20,6 +20,7 @@ import { CoversComponent } from './covers/covers.component';
 import { HomeComponent } from './home/home.component';
 import { MusicBagsComponent } from './music-bags/music-bags.component';
 import { MusicCoversComponent } from './music-covers/music-covers.component';
+import { ErrorPageComponent } from './error-page-component/error-page.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {GalleryConfig, GalleryModule} from 'ng-gallery'
@@ -54,7 +55,8 @@ export const config: GalleryConfig = {
     CoversComponent,
     HomeComponent,
     MusicBagsComponent,
-    MusicCoversComponent
+    MusicCoversComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
