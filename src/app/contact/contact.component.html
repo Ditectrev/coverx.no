@@ -90,6 +90,9 @@
                 <span
                   *ngIf="!signupForm.valid && signupForm.touched"
                   class="help-block">{{ wrongForm }}</span>
+                <span
+                  *ngIf="signupForm.valid && signupForm.touched"
+                  class="help-block">{{ wrongForm }}</span>
               </div>
             </div>
           </form>

@@ -1,5 +1,7 @@
 header {
   background: black;
+  border-bottom: 2px solid #ee9400;
+  border-top: 2px solid #ee9400;
   height: 72px;
   left: 0;
   padding: 17px 0;

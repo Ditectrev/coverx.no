@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit {
   wrongMessage = 'Skriv melding';
   sendMessage = 'Sende melding';
   wrongForm = 'Vennligst fyll inn gyldige data!';
+  sentMessage = '';
 
   lat: number = 61.354352;
   lng: number = 7.252331;
