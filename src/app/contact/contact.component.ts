@@ -22,11 +22,12 @@ export class ContactComponent implements OnInit {
   wrongMessage = 'Skriv melding';
   sendMessage = 'Sende melding';
   wrongForm = 'Vennligst fyll inn gyldige data!';
-  sentMessage = '';
+  sentMessage = 'Meldingen har blitt sendt';
 
   lat: number = 61.354352;
   lng: number = 7.252331;
   signupForm: FormGroup;
+  submitted = false;
 
   constructor(private mailService: MailService) { }
 
@@ -44,6 +45,8 @@ export class ContactComponent implements OnInit {
 
 
   onSubmit(message: IMessage) {
+    this.submitted = true;
+
     this.mailService.sendEmail(message).subscribe(res => {
       // console.log('MailService success', res);
       this.signupForm.reset(); // Reset form on submit.

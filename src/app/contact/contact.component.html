@@ -86,13 +86,19 @@
                   class="help-block">{{ wrongMessage }}</span>
               </div>
               <div class="text-center">
-                <button type="submit">{{ sendMessage }}</button>
+                <button
+                  type="submit"
+                  [disabled]="!signupForm.valid"
+                >
+                  {{ sendMessage }}</button>
                 <span
                   *ngIf="!signupForm.valid && signupForm.touched"
                   class="help-block">{{ wrongForm }}</span>
                 <span
-                  *ngIf="signupForm.valid && signupForm.touched"
-                  class="help-block">{{ wrongForm }}</span>
+                  *ngIf="signupForm.valid && this.submitted"
+                  class="help-block"
+                  style="color: green;"
+                >{{ sentMessage }}</span>
               </div>
             </div>
           </form>
