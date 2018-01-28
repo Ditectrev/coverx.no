@@ -1,12 +1,12 @@
 <section>
-  <div class="container wow fadeIn">
-    <div class="section-header">
+  <div class="container">
+    <div class="section-header wow flipInX">
       <h3 class="section-title">{{ title }}</h3>
       <p class="section-description">{{ description1 }}<br><strong>{{ description2}}</strong></p>
     </div>
-    <div class="row wow fadeInUp">
+    <div class="row">
       <div gallerize>
-        <div class="col-lg-6 col-md-12" *ngFor="let image of images">
+        <div class="col-lg-6 col-md-12 wow pulse" *ngFor="let image of images">
           <img class="img-responsive center-block" src="{{ image }}">
         </div>
       </div>
