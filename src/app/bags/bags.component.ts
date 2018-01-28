@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class BagsComponent {
   title = "Vesker";
   items = [
-    {"name": "Rengjøringvesker", "image": "assets/images/rengjoringvesker6.jpg", "url": "/rengjoringvesker"},
+    {"name": "Rengjøringvesker", "image": "assets/images/rengjoringvesker06.jpg", "url": "/rengjoringvesker"},
     {"name": "Moppervesker", "image": "assets/images/moppervesker1.jpg", "url": "/moppervesker"},
     {"name": "Musikkvesker", "image": "assets/images/musikkvesker4.jpg", "url": "/musikkvesker"}
   ]

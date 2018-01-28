@@ -4,19 +4,11 @@
       <h3 class="section-title">{{ title }}</h3>
     </div>
     <div class="row">
-      <div class="col-xs-12 wow fadeInUp text-center">
-        <p class="section-description"><strong>{{ price }}</strong></p>
-      </div>
       <div class="col-xs-12 wow fadeInUp">
         <p class="section-description">{{ description1 }} <strong>{{ description2 }}</strong></p>
       </div>
-    </div>
-    <div class="row wow fadeInUp">
-      <div gallerize>
-        <div class="col-lg-4 col-md-6" *ngFor="let image of images">
-          <img class="img-responsive center-block" src="{{ image }}">
-        </div>
-      </div>
+      <app-submopper-bags1></app-submopper-bags1>
+      <app-submopper-bags2></app-submopper-bags2>
     </div>
   </div>
 </section>

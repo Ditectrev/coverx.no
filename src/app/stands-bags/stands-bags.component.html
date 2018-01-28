@@ -1,0 +1,16 @@
+<section>
+  <div class="container wow fadeIn">
+    <div class="section-header">
+      <h3 class="section-title">{{ title }}</h3>
+      <p class="section-description"><strong>{{ price }}</strong></p>
+      <p class="section-description">{{ description }}</p>
+    </div>
+    <div class="row wow fadeInUp">
+      <div gallerize>
+        <div class="col-lg-4 col-md-6" *ngFor="let image of images">
+          <img class="img-responsive center-block" src="{{ image }}">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

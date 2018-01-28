@@ -21,9 +21,15 @@ import { HomeComponent } from './home/home.component';
 import { MusicBagsComponent } from './music-bags/music-bags.component';
 import { MusicCoversComponent } from './music-covers/music-covers.component';
 import { ErrorPageComponent } from './error-page-component/error-page.component';
+import { SubcleaningBags1Component } from './subcleaning-bags1/subcleaning-bags1.component';
+import { SubcleaningBags2Component } from './subcleaning-bags2/subcleaning-bags2.component';
+import { SubmopperBags2Component } from './submopper-bags2/submopper-bags2.component';
+import { SubmopperBags1Component } from './submopper-bags1/submopper-bags1.component';
+import { StandsBagsComponent } from './stands-bags/stands-bags.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import {GalleryConfig, GalleryModule} from 'ng-gallery'
+import {GalleryConfig, GalleryModule} from 'ng-gallery';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 import { WINDOW_PROVIDERS } from './shared/window.service';
 import { MailService } from "./shared/mail.service";
@@ -32,7 +38,6 @@ import { AgmCoreModule } from '@agm/core';
 import { MomentModule } from "angular2-moment";
 
 import { appRoutes } from "../routes";
-
 
 export const config: GalleryConfig = {
   // ...
@@ -56,7 +61,12 @@ export const config: GalleryConfig = {
     HomeComponent,
     MusicBagsComponent,
     MusicCoversComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    SubcleaningBags1Component,
+    SubcleaningBags2Component,
+    SubmopperBags2Component,
+    SubmopperBags1Component,
+    StandsBagsComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +74,7 @@ export const config: GalleryConfig = {
     ReactiveFormsModule,
     HttpModule,
     MomentModule,
+    NgxGalleryModule,
     RouterModule.forRoot(appRoutes),
     GalleryModule.forRoot(config),
     AgmCoreModule.forRoot({

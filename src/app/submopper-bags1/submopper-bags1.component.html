@@ -1,0 +1,12 @@
+<div class="row wow fadeInUp">
+  <div class="col-xs-12 wow fadeInUp text-center">
+    <h3 class="section-title">{{ title }}</h3>
+    <p class="section-description"><strong>{{ price }}</strong></p>
+    <p class="section-description"><strong>{{ description }}</strong></p>
+  </div>
+  <div gallerize>
+    <div class="col-lg-4 col-md-6" *ngFor="let image of images">
+      <img class="img-responsive center-block" src="{{ image }}">
+    </div>
+  </div>
+</div>

@@ -12,6 +12,7 @@ import {HomeComponent} from "./app/home/home.component";
 import {MusicBagsComponent} from "./app/music-bags/music-bags.component";
 import {MusicCoversComponent} from "./app/music-covers/music-covers.component";
 import {ErrorPageComponent} from "./app/error-page-component/error-page.component";
+import {StandsBagsComponent} from "./app/stands-bags/stands-bags.component";
 
 export const appRoutes:Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -25,7 +26,8 @@ export const appRoutes:Routes = [
   { path: 'rengjoringvesker', component: CleaningBagsComponent, data: { animation: 'page9' } },
   { path: 'moppervesker', component: MopperBagsComponent, data: { animation: 'page10' } },
   { path: 'musikkvesker', component: MusicBagsComponent, data: { animation: 'page11' } },
-  { path: 'kontakt', component: ContactComponent, data: { animation: 'page12' } },
+  { path: 'stativvesker', component: StandsBagsComponent, data: { animation: 'page12' } },
+  { path: 'kontakt', component: ContactComponent, data: { animation: 'page13' } },
   { path: 'ikke-funnet', component: ErrorPageComponent },
   // It's important that wildcard route has to be the last element in array of routes, because routes parses from top to bottom.
   { path: '**', // Wildcard path, which means to catch all other routes, not specified above.

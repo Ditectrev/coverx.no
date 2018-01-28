@@ -52,7 +52,10 @@ export class ContactComponent implements OnInit {
     this.mailService.sendEmail(message).subscribe(res => {
       // console.log('MailService success', res);
       this.signupForm.reset(); // Reset form on submit.
-      this.submitted = false;
+
+      setTimeout(function () {
+        this.submitted = false;
+      }, 5000);
     }, error => {
       // console.log('MailService error', error);
     });
