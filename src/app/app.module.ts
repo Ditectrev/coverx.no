@@ -38,6 +38,7 @@ import { AgmCoreModule } from '@agm/core';
 import { MomentModule } from "angular2-moment";
 
 import { appRoutes } from "../routes";
+import { AutographComponent } from './autograph/autograph.component';
 
 export const config: GalleryConfig = {
   // ...
@@ -66,7 +67,8 @@ export const config: GalleryConfig = {
     SubcleaningBags2Component,
     SubmopperBags2Component,
     SubmopperBags1Component,
-    StandsBagsComponent
+    StandsBagsComponent,
+    AutographComponent
   ],
   imports: [
     BrowserModule,

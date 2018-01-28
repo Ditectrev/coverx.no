@@ -1,0 +1,13 @@
+p {
+  float: right;
+  background: #343b40;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  p {
+    float: none;
+    text-align: center;
+  }
+}
