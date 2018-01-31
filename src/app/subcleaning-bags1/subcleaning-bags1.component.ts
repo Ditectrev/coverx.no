@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./subcleaning-bags1.component.css']
 })
 export class SubcleaningBags1Component {
-  title = "Med Borrelås";
+  title = "MED BORRELÅS";
   price = "890 kr. netto";
   description = "Størrelse: H-30cm B-40cm D-19cm";
   images = [

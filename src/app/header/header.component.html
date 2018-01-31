@@ -1,10 +1,22 @@
-<header class="header" [class.header-fixed]="fixed">
+<header [class.header-fixed]="fixed">
   <div class="container">
-    <div id="logo" class="pull-left">
-      <a routerLink="/"><img src="assets/images/logo.png" alt="CoverX" title="CoverX"></a>
+    <!-- Brand and toggle get grouped for better mobile display. -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu-collapse"
+              aria-expanded="false">
+        <span class="sr-only">Bytt navigering</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="logo">
+        <a routerLink="/"><img src="assets/images/logo.png" alt="CoverX" title="CoverX"></a>
+      </div>
     </div>
-    <nav role="navigation" [class.nav-menu-container]="!mobile" [class.mobile-nav]="mobile">
-      <ul class="nav-menu">
+
+    <!-- Collect the nav links, forms, and other content for toggling. -->
+    <div class="collapse navbar-collapse" id="nav-menu-collapse">
+      <ul class="nav-menu" id="nav-menu-container">
         <!-- Set routerLinkActiveOptions to avoid duplication menu-active class. -->
         <li
           role="presentation"
@@ -45,130 +57,6 @@
           </ul>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
 </header>
-<!-- TODO: Justify for mobile -->
-<!--<nav class="navbar navbar-inverse navbar-fixed-top">-->
-  <!--<div class="container-fluid">-->
-    <!--<div class="navbar-header">-->
-      <!--<button type="button"-->
-              <!--class="navbar-toggle collapsed"-->
-              <!--(click)="toggleState()">-->
-        <!--<span class="sr-only">Toggle navigation</span>-->
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
-      <!--</button>-->
-      <!--<div id="logo">-->
-        <!--<a routerLink="/"><img src="assets/images/logo.png" alt="CoverX" title="CoverX"></a>-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div class="collapse navbar-collapse"-->
-         <!--[ngClass]="{ 'in': isIn }">-->
-      <!--<ul class="nav navbar-nav nav-menu-container">-->
-        <!--&lt;!&ndash; Set routerLinkActiveOptions to avoid duplication menu-active class. &ndash;&gt;-->
-        <!--<li-->
-          <!--role="presentation"-->
-          <!--routerLinkActive="menu-active"-->
-          <!--[routerLinkActiveOptions]="{exact: true}"-->
-          <!--*ngFor="let route of mainRoutes; let i = index"-->
-        <!--&gt;-->
-          <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-          <!--<ul *ngIf="i === 2">-->
-            <!--<li-->
-              <!--role="presentation"-->
-              <!--routerLinkActive="menu-active"-->
-              <!--[routerLinkActiveOptions]="{exact: true}"-->
-              <!--*ngFor="let route of subroutesOne;"-->
-            <!--&gt;-->
-              <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-            <!--</li>-->
-          <!--</ul>-->
-          <!--<ul *ngIf="i === 3">-->
-            <!--<li-->
-              <!--role="presentation"-->
-              <!--routerLinkActive="menu-active"-->
-              <!--[routerLinkActiveOptions]="{exact: true}"-->
-              <!--*ngFor="let route of subroutesTwo;"-->
-            <!--&gt;-->
-              <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-            <!--</li>-->
-          <!--</ul>-->
-          <!--<ul *ngIf="i === 4">-->
-            <!--<li-->
-              <!--role="presentation"-->
-              <!--routerLinkActive="menu-active"-->
-              <!--[routerLinkActiveOptions]="{exact: true}"-->
-              <!--*ngFor="let route of subroutesThree;"-->
-            <!--&gt;-->
-              <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-            <!--</li>-->
-          <!--</ul>-->
-      <!--</ul>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</nav>-->
-<!--<header class="header" [class.header-fixed]="fixed">-->
-<!--<nav class="nav-menu-container" [class.mobile-nav]="mobile">-->
-  <!--<div class="container-fluid">-->
-    <!--<div class="navbar-header">-->
-      <!--<button type="button"-->
-              <!--class="navbar-toggle collapsed" [class.mobile-nav-toggle]="mobile"-->
-              <!--(click)="toggleState()">-->
-        <!--<span class="sr-only">Toggle navigation</span>-->
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
-      <!--</button>-->
-      <!--<a routerLink="/"><img src="assets/images/logo.png" alt="CoverX" title="CoverX"></a>-->
-    <!--</div>-->
-    <!--<div class="collapse navbar-collapse"-->
-         <!--[ngClass]="{ 'in': isIn }">-->
-      <!--<ul class="nav navbar-nav nav-menu" [class.mobile-nav-toggle]="mobile">-->
-      <!--&lt;!&ndash;<ul class="nav navbar-nav nav-menu">&ndash;&gt;-->
-        <!--&lt;!&ndash; Set routerLinkActiveOptions to avoid duplication menu-active class. &ndash;&gt;-->
-        <!--<li-->
-          <!--role="presentation"-->
-          <!--routerLinkActive="menu-active"-->
-          <!--[routerLinkActiveOptions]="{exact: true}"-->
-          <!--*ngFor="let route of mainRoutes; let i = index"-->
-        <!--&gt;-->
-          <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-          <!--<ul *ngIf="i === 2">-->
-            <!--<li-->
-              <!--role="presentation"-->
-              <!--routerLinkActive="menu-active"-->
-              <!--[routerLinkActiveOptions]="{exact: true}"-->
-              <!--*ngFor="let route of subroutesOne;"-->
-            <!--&gt;-->
-              <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-            <!--</li>-->
-          <!--</ul>-->
-          <!--<ul *ngIf="i === 3">-->
-            <!--<li-->
-              <!--role="presentation"-->
-              <!--routerLinkActive="menu-active"-->
-              <!--[routerLinkActiveOptions]="{exact: true}"-->
-              <!--*ngFor="let route of subroutesTwo;"-->
-            <!--&gt;-->
-              <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-            <!--</li>-->
-          <!--</ul>-->
-          <!--<ul *ngIf="i === 4">-->
-            <!--<li-->
-              <!--role="presentation"-->
-              <!--routerLinkActive="menu-active"-->
-              <!--[routerLinkActiveOptions]="{exact: true}"-->
-              <!--*ngFor="let route of subroutesThree;"-->
-            <!--&gt;-->
-              <!--<a routerLink="{{ route.url }}">{{ route.name }}</a>-->
-            <!--</li>-->
-          <!--</ul>-->
-        <!--</li>-->
-      <!--</ul>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</nav>-->
-  <!--<div [class.mobile-body-overly]="mobile"></div>-->
-<!--</header>-->

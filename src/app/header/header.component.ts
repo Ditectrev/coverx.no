@@ -1,4 +1,4 @@
-import {Component, HostListener, Inject, OnInit} from '@angular/core';
+import {Component, HostListener, Inject} from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser'
 import {WINDOW} from '../shared/window.service';
 
@@ -7,13 +7,7 @@ import {WINDOW} from '../shared/window.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  isIn = false;   // store state
-  toggleState() { // click handler
-    let bool = this.isIn;
-    this.isIn = bool === false ? true : false;
-  }
-
+export class HeaderComponent {
   mainRoutes = [
     { "url": "/", "name": "Hovedside" },
     { "url": "/om-meg", "name": "Om meg" },
@@ -37,24 +31,11 @@ export class HeaderComponent implements OnInit {
   ];
 
   public fixed: boolean = false;
-  public mobile: boolean = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
     @Inject(WINDOW) private window: Window
   ) { }
-
-  ngOnInit() {
-    let mobileWidth = this.window.innerWidth; // Get mobile width.
-    // console.log(mobileWidth);
-
-    if (mobileWidth <= 768) {
-      this.mobile = true;
-      // console.log(this.mobile);
-    } else if (this.mobile && mobileWidth > 768) {
-      this.mobile = false;
-    }
-  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

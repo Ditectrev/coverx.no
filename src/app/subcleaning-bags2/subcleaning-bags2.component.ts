@@ -7,9 +7,10 @@ import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
   styleUrls: ['./subcleaning-bags2.component.css']
 })
 export class SubcleaningBags2Component implements OnInit {
-  title = "Med Glidelås";
+  title = "MED GLIDELÅS";
   price = "1090 kr. netto";
   description = "Størrelse: H-30cm B-40cm D-19cm";
+
 
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];

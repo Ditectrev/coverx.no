@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./submopper-bags1.component.css']
 })
 export class SubmopperBags1Component {
-  title = "Liten (1-5 mopper)";
+  title = "LITEN (1-5 mopper)";
   price = "490 kr. netto";
   description = "Størrelse: H-34cm B-24cm D-19cm";
+
   images = [
     "assets/images/moppervesker5.jpg",
     "assets/images/moppervesker6.jpg",

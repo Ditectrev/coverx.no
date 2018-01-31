@@ -18,7 +18,7 @@ export const appRoutes:Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
   { path: 'om-meg', component: AboutComponent, data: { animation: 'page2' } },
   { path: 'overtrekker', component: CoversComponent, data: { animation: 'page3' } },
-  { path: 'musikkovertrekker', component: MusicCoversComponent, data: { animation: 'page14' } },
+  { path: 'musikkovertrekker', component: MusicCoversComponent, data: { animation: 'page4' } },
   { path: 'battilbehor', component: BoatsComponent, data: { animation: 'page5' } },
   { path: 'batkalesjer', component: BoatCoversComponent, data: { animation: 'page6' } },
   { path: 'batputer', component: BoatChairsComponent, data: { animation: 'page7' } },

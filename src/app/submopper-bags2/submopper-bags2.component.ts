@@ -7,7 +7,7 @@ import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
   styleUrls: ['./submopper-bags2.component.css']
 })
 export class SubmopperBags2Component implements OnInit {
-  title = "Stor (5-10 mopper)";
+  title = "STOR (5-10 mopper)";
   price = "790 kr. netto";
   description = "Størrelse: H-30cm B-40cm D-19cm";
 
