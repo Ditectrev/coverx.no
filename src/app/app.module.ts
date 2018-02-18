@@ -31,7 +31,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {GalleryConfig, GalleryModule} from 'ng-gallery';
 import { NgxGalleryModule } from 'ngx-gallery';
 
-import { WINDOW_PROVIDERS } from './shared/window.service';
 import { MailService } from "./shared/mail.service";
 
 import { AgmCoreModule } from '@agm/core';
@@ -42,7 +41,7 @@ import { AutographComponent } from './autograph/autograph.component';
 
 export const config: GalleryConfig = {
   // ...
-}
+};
 
 @NgModule({
   declarations: [
@@ -83,7 +82,7 @@ export const config: GalleryConfig = {
       apiKey: 'AIzaSyA4C0OuttrXwqjsHNQhIjYvPeQyq7zLvG4'
     })
   ],
-  providers: [WINDOW_PROVIDERS, MailService],
+  providers: [MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

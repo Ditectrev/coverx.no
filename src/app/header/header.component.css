@@ -17,13 +17,6 @@ header #logo img {
   padding: 0;
 }
 
-header.header-fixed {
-  background: rgba(52,59,64,.9);
-  height: 72px;
-  padding: 20px 0;
-  transition: all .5s;
-}
-
 .icon-bar {
   background-color: white;
 }
@@ -126,7 +119,7 @@ header.header-fixed {
   }
 
   #nav-menu-collapse {
-    background: rgba(52,59,64,.9);
+    background: #000000;
     bottom: 0;
     padding-top: 20px;
     position: fixed;
