@@ -1,12 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
+import { WOW } from 'wowjs/dist/wow.min.js'
+import { AfterViewInit } from "@angular/core";
 
 @Component({
   selector: 'app-submopper-bags2',
   templateUrl: './submopper-bags2.component.html',
   styleUrls: ['./submopper-bags2.component.css']
 })
-export class SubmopperBags2Component implements OnInit {
+export class SubmopperBags2Component implements OnInit, AfterViewInit {
   title = "STOR (5-10 mopper)";
   price = "790 kr. netto";
   description = "Størrelse: H-30cm B-40cm D-19cm";
@@ -67,5 +69,9 @@ export class SubmopperBags2Component implements OnInit {
         big: 'assets/images/moppervesker5.jpg'
       }
     ];
+  }
+
+  ngAfterViewInit() {
+    new WOW().init(); // Initialize WOW.js
   }
 }

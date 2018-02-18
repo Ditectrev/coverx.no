@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
+import { WOW } from 'wowjs/dist/wow.min.js'
+import { AfterViewInit } from "@angular/core";
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent implements AfterViewInit {
   title = "Om meg";
   description = "Jeg heter Hanna. Jeg har over 20 års erfaring med å sy. Sying er min lidenskap. Jeg spesialiserer meg på tunge materialer som polyester, kalesjestoff, skai, skinn, folie. I mitt yrkesarbeid har jeg designet og sydd forskjellige ting, slike som:";
   list = [
@@ -23,5 +25,9 @@ export class AboutComponent {
     "assets/images/om-meg2.jpg",
     "assets/images/om-meg3.jpg",
     "assets/images/om-meg4.jpg"
-  ]
+  ];
+
+  ngAfterViewInit() {
+    new WOW().init(); // Initialize WOW.js
+  }
 }

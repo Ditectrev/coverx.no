@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { WOW } from 'wowjs/dist/wow.min.js'
+import { AfterViewInit } from "@angular/core";
 
 @Component({
   selector: 'app-music-covers',
   templateUrl: './music-covers.component.html',
   styleUrls: ['./music-covers.component.css']
 })
-export class MusicCoversComponent {
+export class MusicCoversComponent implements AfterViewInit {
   title = "Musikkovertrekker";
   description = "Hvis du vil forsikre din musikkutstyr bare ta kontakt med meg.";
   images = [
@@ -18,5 +20,9 @@ export class MusicCoversComponent {
     "assets/images/musikkovertrekker7.jpg",
     "assets/images/musikkovertrekker8.jpg",
     "assets/images/musikkovertrekker9.jpg"
-  ]
+  ];
+
+  ngAfterViewInit() {
+    new WOW().init(); // Initialize WOW.js
+  }
 }

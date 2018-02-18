@@ -1,6 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
-import { WOW } from 'wowjs/dist/wow.min.js'
-import { AfterViewInit } from "@angular/core";
+import {Component} from '@angular/core';
 import { fadeAnimation } from "./shared/fade.animation";
 import {RouterOutlet} from "@angular/router";
 
@@ -10,12 +8,8 @@ import {RouterOutlet} from "@angular/router";
   styleUrls: ['./app.component.css'],
   animations: [fadeAnimation]
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
   title = 'CoverX';
-
-  ngAfterViewInit() {
-    new WOW().init(); // Initialize WOW.js
-  }
 
   getRouterOutletState(routerOutlet: RouterOutlet) {
     const routeData = routerOutlet.activatedRouteData['animation'];

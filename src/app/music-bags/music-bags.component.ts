@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { WOW } from 'wowjs/dist/wow.min.js'
+import { AfterViewInit } from "@angular/core";
 
 @Component({
   selector: 'app-music-bags',
   templateUrl: './music-bags.component.html',
   styleUrls: ['./music-bags.component.css']
 })
-export class MusicBagsComponent {
+export class MusicBagsComponent implements AfterViewInit {
   title = "Musikkvesker";
   description = "Veldig praktiske vesker til keybord, slagverk eller lydutstyr o.s.l. Alle vesker er styrket av skummet.";
   images = [
@@ -18,5 +20,9 @@ export class MusicBagsComponent {
     "assets/images/musikkvesker7.jpg",
     "assets/images/musikkvesker8.jpg",
     "assets/images/musikkvesker9.jpg"
-  ]
+  ];
+
+  ngAfterViewInit() {
+    new WOW().init(); // Initialize WOW.js
+  }
 }

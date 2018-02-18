@@ -1,12 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
+import { WOW } from 'wowjs/dist/wow.min.js'
+import { AfterViewInit } from "@angular/core";
 
 @Component({
   selector: 'app-subcleaning-bags2',
   templateUrl: './subcleaning-bags2.component.html',
   styleUrls: ['./subcleaning-bags2.component.css']
 })
-export class SubcleaningBags2Component implements OnInit {
+export class SubcleaningBags2Component implements OnInit, AfterViewInit {
   title = "MED GLIDELÅS";
   price = "1090 kr. netto";
   description = "Størrelse: H-30cm B-40cm D-19cm";
@@ -62,5 +64,9 @@ export class SubcleaningBags2Component implements OnInit {
         big: 'assets/images/rengjoringvesker10.jpg'
       }
     ];
+  }
+
+  ngAfterViewInit() {
+    new WOW().init(); // Initialize WOW.js
   }
 }

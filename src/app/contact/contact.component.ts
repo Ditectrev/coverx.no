@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl, Validators} from "@angular/forms";
 import { MailService, IMessage } from "../shared/mail.service";
+import { WOW } from 'wowjs/dist/wow.min.js'
+import { AfterViewInit } from "@angular/core";
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent implements OnInit, AfterViewInit {
   title = 'Kontakt';
 
   street = 'Høgisvegen 44';
@@ -43,6 +45,10 @@ export class ContactComponent implements OnInit {
     });
 
     this.submitted = false;
+  }
+
+  ngAfterViewInit() {
+    new WOW().init(); // Initialize WOW.js
   }
 
 
